@@ -1,0 +1,793 @@
+#Build: Synplify (R) O-2018.09-SP1, Build 3588R, Nov 27 2018
+#install: /vol/synopsys/fpga/O-2018.09-SP1
+#OS: Linux 
+#Hostname: huntress.ece.northwestern.edu
+
+# Thu May  7 04:00:04 2026
+
+#Implementation: DEQUANTIZE
+
+
+Copyright (C) 1994-2018 Synopsys, Inc.
+This Synopsys software and all associated documentation are proprietary to Synopsys, Inc.
+and may only be used pursuant to the terms and conditions of a written license agreement
+with Synopsys, Inc. All other use, reproduction, modification, or distribution of the
+Synopsys software or the associated documentation is strictly prohibited.
+Tool: Synplify (R)
+Build: O-2018.09-SP1
+Install: /vol/synopsys/fpga/O-2018.09-SP1
+OS: Red Hat Enterprise Linux 8.10 (Ootpa)
+Hostname: huntress.ece.northwestern.edu
+max virtual memory: unlimited (bytes)
+max user processes: 126617
+max stack size: 8388608 (bytes)
+
+
+Implementation : DEQUANTIZE
+Synopsys HDL Compiler, Version comp2018q4p1, Build 004R, Built Nov 27 2018 21:19:49
+
+@N|Running in 64-bit mode
+###########################################################[
+
+Copyright (C) 1994-2018 Synopsys, Inc.
+This Synopsys software and all associated documentation are proprietary to Synopsys, Inc.
+and may only be used pursuant to the terms and conditions of a written license agreement
+with Synopsys, Inc. All other use, reproduction, modification, or distribution of the
+Synopsys software or the associated documentation is strictly prohibited.
+Tool: Synplify (R)
+Build: O-2018.09-SP1
+Install: /vol/synopsys/fpga/O-2018.09-SP1
+OS: Red Hat Enterprise Linux 8.10 (Ootpa)
+Hostname: huntress.ece.northwestern.edu
+max virtual memory: unlimited (bytes)
+max user processes: 126617
+max stack size: 8388608 (bytes)
+
+
+Implementation : DEQUANTIZE
+Synopsys Verilog Compiler, Version comp2018q4p1, Build 004R, Built Nov 27 2018 21:19:49
+
+@N|Running in 64-bit mode
+@N: CG1349 :	| Running Verilog Compiler in System Verilog mode
+
+@N: CG1350 :	| Running Verilog Compiler in Multiple File Compilation Unit mode
+
+@I::"/vol/synopsys/fpga/O-2018.09-SP1/lib/altera/altera.v" (library work)
+@I::"/vol/synopsys/fpga/O-2018.09-SP1/lib/altera/altera_mult_add.v" (library work)
+@N: CG1343 :"/vol/synopsys/fpga/O-2018.09-SP1/lib/altera/altera_mult_add.v":735:14:735:33|Read directive read_comments_as_HDL on.
+@N: CG1344 :"/vol/synopsys/fpga/O-2018.09-SP1/lib/altera/altera_mult_add.v":743:14:743:33|Read directive read_comments_as_HDL off.
+@W: CS141 :"/vol/synopsys/fpga/O-2018.09-SP1/lib/altera/altera_mult_add.v":1725:22:1725:53|Unrecognized synthesis directive enable_verilog_initial_construct. Verify the correct directive name.
+@W: CS141 :"/vol/synopsys/fpga/O-2018.09-SP1/lib/altera/altera_mult_add.v":1832:22:1832:53|Unrecognized synthesis directive enable_verilog_initial_construct. Verify the correct directive name.
+@W: CS141 :"/vol/synopsys/fpga/O-2018.09-SP1/lib/altera/altera_mult_add.v":2553:22:2553:53|Unrecognized synthesis directive enable_verilog_initial_construct. Verify the correct directive name.
+@W: CS141 :"/vol/synopsys/fpga/O-2018.09-SP1/lib/altera/altera_mult_add.v":3108:22:3108:53|Unrecognized synthesis directive enable_verilog_initial_construct. Verify the correct directive name.
+@W: CS141 :"/vol/synopsys/fpga/O-2018.09-SP1/lib/altera/altera_mult_add.v":4364:22:4364:53|Unrecognized synthesis directive enable_verilog_initial_construct. Verify the correct directive name.
+@I::"/vol/synopsys/fpga/O-2018.09-SP1/lib/altera/quartus_prime181/cyclonev.v" (library work)
+@I:"/vol/synopsys/fpga/O-2018.09-SP1/lib/altera/quartus_prime181/cyclonev.v":"/vol/synopsys/fpga/O-2018.09-SP1/lib/altera/quartus_prime181/cyclonev_atoms.v" (library work)
+@I:"/vol/synopsys/fpga/O-2018.09-SP1/lib/altera/quartus_prime181/cyclonev.v":"/vol/synopsys/fpga/O-2018.09-SP1/lib/altera/quartus_prime181/cyclonev_hssi_atoms.v" (library work)
+@I:"/vol/synopsys/fpga/O-2018.09-SP1/lib/altera/quartus_prime181/cyclonev.v":"/vol/synopsys/fpga/O-2018.09-SP1/lib/altera/quartus_prime181/cyclonev_hps_atoms.sv" (library work)
+@I:"/vol/synopsys/fpga/O-2018.09-SP1/lib/altera/quartus_prime181/cyclonev.v":"/vol/synopsys/fpga/O-2018.09-SP1/lib/altera/quartus_prime181/cyclonev_pcie_hip_atoms.v" (library work)
+@I::"/vol/synopsys/fpga/O-2018.09-SP1/lib/altera/quartus_prime181/altera_mf.v" (library work)
+@N: CG334 :"/vol/synopsys/fpga/O-2018.09-SP1/lib/altera/quartus_prime181/altera_mf.v":53001:16:53001:28|Read directive translate_off.
+@N: CG333 :"/vol/synopsys/fpga/O-2018.09-SP1/lib/altera/quartus_prime181/altera_mf.v":53051:16:53051:27|Read directive translate_on.
+@N: CG334 :"/vol/synopsys/fpga/O-2018.09-SP1/lib/altera/quartus_prime181/altera_mf.v":53060:16:53060:28|Read directive translate_off.
+@N: CG333 :"/vol/synopsys/fpga/O-2018.09-SP1/lib/altera/quartus_prime181/altera_mf.v":53074:16:53074:27|Read directive translate_on.
+@N: CG334 :"/vol/synopsys/fpga/O-2018.09-SP1/lib/altera/quartus_prime181/altera_mf.v":53221:20:53221:32|Read directive translate_off.
+@N: CG333 :"/vol/synopsys/fpga/O-2018.09-SP1/lib/altera/quartus_prime181/altera_mf.v":53226:20:53226:31|Read directive translate_on.
+@N: CG334 :"/vol/synopsys/fpga/O-2018.09-SP1/lib/altera/quartus_prime181/altera_mf.v":53229:20:53229:32|Read directive translate_off.
+@N: CG333 :"/vol/synopsys/fpga/O-2018.09-SP1/lib/altera/quartus_prime181/altera_mf.v":53232:20:53232:31|Read directive translate_on.
+@N: CG334 :"/vol/synopsys/fpga/O-2018.09-SP1/lib/altera/quartus_prime181/altera_mf.v":53346:20:53346:32|Read directive translate_off.
+@N: CG333 :"/vol/synopsys/fpga/O-2018.09-SP1/lib/altera/quartus_prime181/altera_mf.v":53351:20:53351:31|Read directive translate_on.
+@N: CG334 :"/vol/synopsys/fpga/O-2018.09-SP1/lib/altera/quartus_prime181/altera_mf.v":53354:20:53354:32|Read directive translate_off.
+@N: CG333 :"/vol/synopsys/fpga/O-2018.09-SP1/lib/altera/quartus_prime181/altera_mf.v":53357:20:53357:31|Read directive translate_on.
+@N: CG334 :"/vol/synopsys/fpga/O-2018.09-SP1/lib/altera/quartus_prime181/altera_mf.v":53446:20:53446:32|Read directive translate_off.
+@N: CG333 :"/vol/synopsys/fpga/O-2018.09-SP1/lib/altera/quartus_prime181/altera_mf.v":53451:20:53451:31|Read directive translate_on.
+@N: CG334 :"/vol/synopsys/fpga/O-2018.09-SP1/lib/altera/quartus_prime181/altera_mf.v":53454:20:53454:32|Read directive translate_off.
+@N: CG333 :"/vol/synopsys/fpga/O-2018.09-SP1/lib/altera/quartus_prime181/altera_mf.v":53457:20:53457:31|Read directive translate_on.
+@N: CG334 :"/vol/synopsys/fpga/O-2018.09-SP1/lib/altera/quartus_prime181/altera_mf.v":53545:20:53545:32|Read directive translate_off.
+@N: CG333 :"/vol/synopsys/fpga/O-2018.09-SP1/lib/altera/quartus_prime181/altera_mf.v":53550:20:53550:31|Read directive translate_on.
+@N: CG334 :"/vol/synopsys/fpga/O-2018.09-SP1/lib/altera/quartus_prime181/altera_mf.v":53553:20:53553:32|Read directive translate_off.
+@N: CG333 :"/vol/synopsys/fpga/O-2018.09-SP1/lib/altera/quartus_prime181/altera_mf.v":53556:20:53556:31|Read directive translate_on.
+@N: CG334 :"/vol/synopsys/fpga/O-2018.09-SP1/lib/altera/quartus_prime181/altera_mf.v":53642:20:53642:32|Read directive translate_off.
+@N: CG333 :"/vol/synopsys/fpga/O-2018.09-SP1/lib/altera/quartus_prime181/altera_mf.v":53647:20:53647:31|Read directive translate_on.
+@N: CG334 :"/vol/synopsys/fpga/O-2018.09-SP1/lib/altera/quartus_prime181/altera_mf.v":53650:20:53650:32|Read directive translate_off.
+@N: CG333 :"/vol/synopsys/fpga/O-2018.09-SP1/lib/altera/quartus_prime181/altera_mf.v":53653:20:53653:31|Read directive translate_on.
+@N: CG334 :"/vol/synopsys/fpga/O-2018.09-SP1/lib/altera/quartus_prime181/altera_mf.v":53861:12:53861:24|Read directive translate_off.
+@N: CG333 :"/vol/synopsys/fpga/O-2018.09-SP1/lib/altera/quartus_prime181/altera_mf.v":53875:12:53875:23|Read directive translate_on.
+@N: CG334 :"/vol/synopsys/fpga/O-2018.09-SP1/lib/altera/quartus_prime181/altera_mf.v":54140:12:54140:24|Read directive translate_off.
+@N: CG333 :"/vol/synopsys/fpga/O-2018.09-SP1/lib/altera/quartus_prime181/altera_mf.v":54154:12:54154:23|Read directive translate_on.
+@I::"/vol/synopsys/fpga/O-2018.09-SP1/lib/altera/quartus_prime181/altera_lpm.v" (library work)
+@I::"/vol/synopsys/fpga/O-2018.09-SP1/lib/altera/quartus_prime181/altera_primitives.v" (library work)
+@I::"/vol/synopsys/fpga/O-2018.09-SP1/lib/vlog/hypermods.v" (library __hyper__lib__)
+@I::"/vol/synopsys/fpga/O-2018.09-SP1/lib/vlog/umr_capim.v" (library snps_haps)
+@I::"/vol/synopsys/fpga/O-2018.09-SP1/lib/synip/hcei/zceistubs.v" (library snps_haps)
+@I::"/vol/synopsys/fpga/O-2018.09-SP1/lib/vlog/scemi_objects.v" (library snps_haps)
+@I::"/vol/synopsys/fpga/O-2018.09-SP1/lib/vlog/scemi_pipes.svh" (library snps_haps)
+@I::"/home/tnj0921/Documents/LLMReaserch/DEQUANTIZE/DEQUANTIZE.sv" (library work)
+Verilog syntax check successful!
+Selecting top level module DEQUANTIZE
+@N: CG364 :"/home/tnj0921/Documents/LLMReaserch/DEQUANTIZE/DEQUANTIZE.sv":4:7:4:16|Synthesizing module DEQUANTIZE in library work.
+@W: CG133 :"/home/tnj0921/Documents/LLMReaserch/DEQUANTIZE/DEQUANTIZE.sv":18:27:18:37|Object dequant_res is declared but not assigned. Either assign a value or remove the declaration.
+Running optimization stage 1 on DEQUANTIZE .......
+Running optimization stage 2 on DEQUANTIZE .......
+@W: CL190 :"/home/tnj0921/Documents/LLMReaserch/DEQUANTIZE/DEQUANTIZE.sv":26:12:26:20|Optimizing register bit gen_dequant[0].data_out[16] to a constant 0. To keep the instance, apply constraint syn_preserve=1 on the instance.
+@W: CL190 :"/home/tnj0921/Documents/LLMReaserch/DEQUANTIZE/DEQUANTIZE.sv":26:12:26:20|Optimizing register bit gen_dequant[0].data_out[17] to a constant 0. To keep the instance, apply constraint syn_preserve=1 on the instance.
+@W: CL190 :"/home/tnj0921/Documents/LLMReaserch/DEQUANTIZE/DEQUANTIZE.sv":26:12:26:20|Optimizing register bit gen_dequant[0].data_out[18] to a constant 0. To keep the instance, apply constraint syn_preserve=1 on the instance.
+@W: CL190 :"/home/tnj0921/Documents/LLMReaserch/DEQUANTIZE/DEQUANTIZE.sv":26:12:26:20|Optimizing register bit gen_dequant[0].data_out[19] to a constant 0. To keep the instance, apply constraint syn_preserve=1 on the instance.
+@W: CL190 :"/home/tnj0921/Documents/LLMReaserch/DEQUANTIZE/DEQUANTIZE.sv":26:12:26:20|Optimizing register bit gen_dequant[0].data_out[20] to a constant 0. To keep the instance, apply constraint syn_preserve=1 on the instance.
+@W: CL190 :"/home/tnj0921/Documents/LLMReaserch/DEQUANTIZE/DEQUANTIZE.sv":26:12:26:20|Optimizing register bit gen_dequant[0].data_out[21] to a constant 0. To keep the instance, apply constraint syn_preserve=1 on the instance.
+@W: CL190 :"/home/tnj0921/Documents/LLMReaserch/DEQUANTIZE/DEQUANTIZE.sv":26:12:26:20|Optimizing register bit gen_dequant[0].data_out[22] to a constant 0. To keep the instance, apply constraint syn_preserve=1 on the instance.
+@W: CL190 :"/home/tnj0921/Documents/LLMReaserch/DEQUANTIZE/DEQUANTIZE.sv":26:12:26:20|Optimizing register bit gen_dequant[0].data_out[23] to a constant 0. To keep the instance, apply constraint syn_preserve=1 on the instance.
+@W: CL190 :"/home/tnj0921/Documents/LLMReaserch/DEQUANTIZE/DEQUANTIZE.sv":26:12:26:20|Optimizing register bit gen_dequant[0].data_out[24] to a constant 0. To keep the instance, apply constraint syn_preserve=1 on the instance.
+@W: CL190 :"/home/tnj0921/Documents/LLMReaserch/DEQUANTIZE/DEQUANTIZE.sv":26:12:26:20|Optimizing register bit gen_dequant[0].data_out[25] to a constant 0. To keep the instance, apply constraint syn_preserve=1 on the instance.
+@W: CL190 :"/home/tnj0921/Documents/LLMReaserch/DEQUANTIZE/DEQUANTIZE.sv":26:12:26:20|Optimizing register bit gen_dequant[0].data_out[26] to a constant 0. To keep the instance, apply constraint syn_preserve=1 on the instance.
+@W: CL190 :"/home/tnj0921/Documents/LLMReaserch/DEQUANTIZE/DEQUANTIZE.sv":26:12:26:20|Optimizing register bit gen_dequant[0].data_out[27] to a constant 0. To keep the instance, apply constraint syn_preserve=1 on the instance.
+@W: CL190 :"/home/tnj0921/Documents/LLMReaserch/DEQUANTIZE/DEQUANTIZE.sv":26:12:26:20|Optimizing register bit gen_dequant[0].data_out[28] to a constant 0. To keep the instance, apply constraint syn_preserve=1 on the instance.
+@W: CL190 :"/home/tnj0921/Documents/LLMReaserch/DEQUANTIZE/DEQUANTIZE.sv":26:12:26:20|Optimizing register bit gen_dequant[0].data_out[29] to a constant 0. To keep the instance, apply constraint syn_preserve=1 on the instance.
+@W: CL190 :"/home/tnj0921/Documents/LLMReaserch/DEQUANTIZE/DEQUANTIZE.sv":26:12:26:20|Optimizing register bit gen_dequant[0].data_out[30] to a constant 0. To keep the instance, apply constraint syn_preserve=1 on the instance.
+@W: CL190 :"/home/tnj0921/Documents/LLMReaserch/DEQUANTIZE/DEQUANTIZE.sv":26:12:26:20|Optimizing register bit gen_dequant[0].data_out[31] to a constant 0. To keep the instance, apply constraint syn_preserve=1 on the instance.
+@W: CL190 :"/home/tnj0921/Documents/LLMReaserch/DEQUANTIZE/DEQUANTIZE.sv":26:12:26:20|Optimizing register bit gen_dequant[1].data_out[48] to a constant 0. To keep the instance, apply constraint syn_preserve=1 on the instance.
+@W: CL190 :"/home/tnj0921/Documents/LLMReaserch/DEQUANTIZE/DEQUANTIZE.sv":26:12:26:20|Optimizing register bit gen_dequant[1].data_out[49] to a constant 0. To keep the instance, apply constraint syn_preserve=1 on the instance.
+@W: CL190 :"/home/tnj0921/Documents/LLMReaserch/DEQUANTIZE/DEQUANTIZE.sv":26:12:26:20|Optimizing register bit gen_dequant[1].data_out[50] to a constant 0. To keep the instance, apply constraint syn_preserve=1 on the instance.
+@W: CL190 :"/home/tnj0921/Documents/LLMReaserch/DEQUANTIZE/DEQUANTIZE.sv":26:12:26:20|Optimizing register bit gen_dequant[1].data_out[51] to a constant 0. To keep the instance, apply constraint syn_preserve=1 on the instance.
+@W: CL190 :"/home/tnj0921/Documents/LLMReaserch/DEQUANTIZE/DEQUANTIZE.sv":26:12:26:20|Optimizing register bit gen_dequant[1].data_out[52] to a constant 0. To keep the instance, apply constraint syn_preserve=1 on the instance.
+@W: CL190 :"/home/tnj0921/Documents/LLMReaserch/DEQUANTIZE/DEQUANTIZE.sv":26:12:26:20|Optimizing register bit gen_dequant[1].data_out[53] to a constant 0. To keep the instance, apply constraint syn_preserve=1 on the instance.
+@W: CL190 :"/home/tnj0921/Documents/LLMReaserch/DEQUANTIZE/DEQUANTIZE.sv":26:12:26:20|Optimizing register bit gen_dequant[1].data_out[54] to a constant 0. To keep the instance, apply constraint syn_preserve=1 on the instance.
+@W: CL190 :"/home/tnj0921/Documents/LLMReaserch/DEQUANTIZE/DEQUANTIZE.sv":26:12:26:20|Optimizing register bit gen_dequant[1].data_out[55] to a constant 0. To keep the instance, apply constraint syn_preserve=1 on the instance.
+@W: CL190 :"/home/tnj0921/Documents/LLMReaserch/DEQUANTIZE/DEQUANTIZE.sv":26:12:26:20|Optimizing register bit gen_dequant[1].data_out[56] to a constant 0. To keep the instance, apply constraint syn_preserve=1 on the instance.
+@W: CL190 :"/home/tnj0921/Documents/LLMReaserch/DEQUANTIZE/DEQUANTIZE.sv":26:12:26:20|Optimizing register bit gen_dequant[1].data_out[57] to a constant 0. To keep the instance, apply constraint syn_preserve=1 on the instance.
+@W: CL190 :"/home/tnj0921/Documents/LLMReaserch/DEQUANTIZE/DEQUANTIZE.sv":26:12:26:20|Optimizing register bit gen_dequant[1].data_out[58] to a constant 0. To keep the instance, apply constraint syn_preserve=1 on the instance.
+@W: CL190 :"/home/tnj0921/Documents/LLMReaserch/DEQUANTIZE/DEQUANTIZE.sv":26:12:26:20|Optimizing register bit gen_dequant[1].data_out[59] to a constant 0. To keep the instance, apply constraint syn_preserve=1 on the instance.
+@W: CL190 :"/home/tnj0921/Documents/LLMReaserch/DEQUANTIZE/DEQUANTIZE.sv":26:12:26:20|Optimizing register bit gen_dequant[1].data_out[60] to a constant 0. To keep the instance, apply constraint syn_preserve=1 on the instance.
+@W: CL190 :"/home/tnj0921/Documents/LLMReaserch/DEQUANTIZE/DEQUANTIZE.sv":26:12:26:20|Optimizing register bit gen_dequant[1].data_out[61] to a constant 0. To keep the instance, apply constraint syn_preserve=1 on the instance.
+@W: CL190 :"/home/tnj0921/Documents/LLMReaserch/DEQUANTIZE/DEQUANTIZE.sv":26:12:26:20|Optimizing register bit gen_dequant[1].data_out[62] to a constant 0. To keep the instance, apply constraint syn_preserve=1 on the instance.
+@W: CL190 :"/home/tnj0921/Documents/LLMReaserch/DEQUANTIZE/DEQUANTIZE.sv":26:12:26:20|Optimizing register bit gen_dequant[1].data_out[63] to a constant 0. To keep the instance, apply constraint syn_preserve=1 on the instance.
+@W: CL190 :"/home/tnj0921/Documents/LLMReaserch/DEQUANTIZE/DEQUANTIZE.sv":26:12:26:20|Optimizing register bit gen_dequant[2].data_out[80] to a constant 0. To keep the instance, apply constraint syn_preserve=1 on the instance.
+@W: CL190 :"/home/tnj0921/Documents/LLMReaserch/DEQUANTIZE/DEQUANTIZE.sv":26:12:26:20|Optimizing register bit gen_dequant[2].data_out[81] to a constant 0. To keep the instance, apply constraint syn_preserve=1 on the instance.
+@W: CL190 :"/home/tnj0921/Documents/LLMReaserch/DEQUANTIZE/DEQUANTIZE.sv":26:12:26:20|Optimizing register bit gen_dequant[2].data_out[82] to a constant 0. To keep the instance, apply constraint syn_preserve=1 on the instance.
+@W: CL190 :"/home/tnj0921/Documents/LLMReaserch/DEQUANTIZE/DEQUANTIZE.sv":26:12:26:20|Optimizing register bit gen_dequant[2].data_out[83] to a constant 0. To keep the instance, apply constraint syn_preserve=1 on the instance.
+@W: CL190 :"/home/tnj0921/Documents/LLMReaserch/DEQUANTIZE/DEQUANTIZE.sv":26:12:26:20|Optimizing register bit gen_dequant[2].data_out[84] to a constant 0. To keep the instance, apply constraint syn_preserve=1 on the instance.
+@W: CL190 :"/home/tnj0921/Documents/LLMReaserch/DEQUANTIZE/DEQUANTIZE.sv":26:12:26:20|Optimizing register bit gen_dequant[2].data_out[85] to a constant 0. To keep the instance, apply constraint syn_preserve=1 on the instance.
+@W: CL190 :"/home/tnj0921/Documents/LLMReaserch/DEQUANTIZE/DEQUANTIZE.sv":26:12:26:20|Optimizing register bit gen_dequant[2].data_out[86] to a constant 0. To keep the instance, apply constraint syn_preserve=1 on the instance.
+@W: CL190 :"/home/tnj0921/Documents/LLMReaserch/DEQUANTIZE/DEQUANTIZE.sv":26:12:26:20|Optimizing register bit gen_dequant[2].data_out[87] to a constant 0. To keep the instance, apply constraint syn_preserve=1 on the instance.
+@W: CL190 :"/home/tnj0921/Documents/LLMReaserch/DEQUANTIZE/DEQUANTIZE.sv":26:12:26:20|Optimizing register bit gen_dequant[2].data_out[88] to a constant 0. To keep the instance, apply constraint syn_preserve=1 on the instance.
+@W: CL190 :"/home/tnj0921/Documents/LLMReaserch/DEQUANTIZE/DEQUANTIZE.sv":26:12:26:20|Optimizing register bit gen_dequant[2].data_out[89] to a constant 0. To keep the instance, apply constraint syn_preserve=1 on the instance.
+@W: CL190 :"/home/tnj0921/Documents/LLMReaserch/DEQUANTIZE/DEQUANTIZE.sv":26:12:26:20|Optimizing register bit gen_dequant[2].data_out[90] to a constant 0. To keep the instance, apply constraint syn_preserve=1 on the instance.
+@W: CL190 :"/home/tnj0921/Documents/LLMReaserch/DEQUANTIZE/DEQUANTIZE.sv":26:12:26:20|Optimizing register bit gen_dequant[2].data_out[91] to a constant 0. To keep the instance, apply constraint syn_preserve=1 on the instance.
+@W: CL190 :"/home/tnj0921/Documents/LLMReaserch/DEQUANTIZE/DEQUANTIZE.sv":26:12:26:20|Optimizing register bit gen_dequant[2].data_out[92] to a constant 0. To keep the instance, apply constraint syn_preserve=1 on the instance.
+@W: CL190 :"/home/tnj0921/Documents/LLMReaserch/DEQUANTIZE/DEQUANTIZE.sv":26:12:26:20|Optimizing register bit gen_dequant[2].data_out[93] to a constant 0. To keep the instance, apply constraint syn_preserve=1 on the instance.
+@W: CL190 :"/home/tnj0921/Documents/LLMReaserch/DEQUANTIZE/DEQUANTIZE.sv":26:12:26:20|Optimizing register bit gen_dequant[2].data_out[94] to a constant 0. To keep the instance, apply constraint syn_preserve=1 on the instance.
+@W: CL190 :"/home/tnj0921/Documents/LLMReaserch/DEQUANTIZE/DEQUANTIZE.sv":26:12:26:20|Optimizing register bit gen_dequant[2].data_out[95] to a constant 0. To keep the instance, apply constraint syn_preserve=1 on the instance.
+@W: CL190 :"/home/tnj0921/Documents/LLMReaserch/DEQUANTIZE/DEQUANTIZE.sv":26:12:26:20|Optimizing register bit gen_dequant[3].data_out[112] to a constant 0. To keep the instance, apply constraint syn_preserve=1 on the instance.
+@W: CL190 :"/home/tnj0921/Documents/LLMReaserch/DEQUANTIZE/DEQUANTIZE.sv":26:12:26:20|Optimizing register bit gen_dequant[3].data_out[113] to a constant 0. To keep the instance, apply constraint syn_preserve=1 on the instance.
+@W: CL190 :"/home/tnj0921/Documents/LLMReaserch/DEQUANTIZE/DEQUANTIZE.sv":26:12:26:20|Optimizing register bit gen_dequant[3].data_out[114] to a constant 0. To keep the instance, apply constraint syn_preserve=1 on the instance.
+@W: CL190 :"/home/tnj0921/Documents/LLMReaserch/DEQUANTIZE/DEQUANTIZE.sv":26:12:26:20|Optimizing register bit gen_dequant[3].data_out[115] to a constant 0. To keep the instance, apply constraint syn_preserve=1 on the instance.
+@W: CL190 :"/home/tnj0921/Documents/LLMReaserch/DEQUANTIZE/DEQUANTIZE.sv":26:12:26:20|Optimizing register bit gen_dequant[3].data_out[116] to a constant 0. To keep the instance, apply constraint syn_preserve=1 on the instance.
+@W: CL190 :"/home/tnj0921/Documents/LLMReaserch/DEQUANTIZE/DEQUANTIZE.sv":26:12:26:20|Optimizing register bit gen_dequant[3].data_out[117] to a constant 0. To keep the instance, apply constraint syn_preserve=1 on the instance.
+@W: CL190 :"/home/tnj0921/Documents/LLMReaserch/DEQUANTIZE/DEQUANTIZE.sv":26:12:26:20|Optimizing register bit gen_dequant[3].data_out[118] to a constant 0. To keep the instance, apply constraint syn_preserve=1 on the instance.
+@W: CL190 :"/home/tnj0921/Documents/LLMReaserch/DEQUANTIZE/DEQUANTIZE.sv":26:12:26:20|Optimizing register bit gen_dequant[3].data_out[119] to a constant 0. To keep the instance, apply constraint syn_preserve=1 on the instance.
+@W: CL190 :"/home/tnj0921/Documents/LLMReaserch/DEQUANTIZE/DEQUANTIZE.sv":26:12:26:20|Optimizing register bit gen_dequant[3].data_out[120] to a constant 0. To keep the instance, apply constraint syn_preserve=1 on the instance.
+@W: CL190 :"/home/tnj0921/Documents/LLMReaserch/DEQUANTIZE/DEQUANTIZE.sv":26:12:26:20|Optimizing register bit gen_dequant[3].data_out[121] to a constant 0. To keep the instance, apply constraint syn_preserve=1 on the instance.
+@W: CL190 :"/home/tnj0921/Documents/LLMReaserch/DEQUANTIZE/DEQUANTIZE.sv":26:12:26:20|Optimizing register bit gen_dequant[3].data_out[122] to a constant 0. To keep the instance, apply constraint syn_preserve=1 on the instance.
+@W: CL190 :"/home/tnj0921/Documents/LLMReaserch/DEQUANTIZE/DEQUANTIZE.sv":26:12:26:20|Optimizing register bit gen_dequant[3].data_out[123] to a constant 0. To keep the instance, apply constraint syn_preserve=1 on the instance.
+@W: CL190 :"/home/tnj0921/Documents/LLMReaserch/DEQUANTIZE/DEQUANTIZE.sv":26:12:26:20|Optimizing register bit gen_dequant[3].data_out[124] to a constant 0. To keep the instance, apply constraint syn_preserve=1 on the instance.
+@W: CL190 :"/home/tnj0921/Documents/LLMReaserch/DEQUANTIZE/DEQUANTIZE.sv":26:12:26:20|Optimizing register bit gen_dequant[3].data_out[125] to a constant 0. To keep the instance, apply constraint syn_preserve=1 on the instance.
+@W: CL190 :"/home/tnj0921/Documents/LLMReaserch/DEQUANTIZE/DEQUANTIZE.sv":26:12:26:20|Optimizing register bit gen_dequant[3].data_out[126] to a constant 0. To keep the instance, apply constraint syn_preserve=1 on the instance.
+@W: CL190 :"/home/tnj0921/Documents/LLMReaserch/DEQUANTIZE/DEQUANTIZE.sv":26:12:26:20|Optimizing register bit gen_dequant[3].data_out[127] to a constant 0. To keep the instance, apply constraint syn_preserve=1 on the instance.
+@W: CL279 :"/home/tnj0921/Documents/LLMReaserch/DEQUANTIZE/DEQUANTIZE.sv":26:12:26:20|Pruning register bits 127 to 112 of gen_dequant[3].data_out[127:96]. If this is not the intended behavior, drive the inputs with valid values, or inputs from the top level.
+@W: CL279 :"/home/tnj0921/Documents/LLMReaserch/DEQUANTIZE/DEQUANTIZE.sv":26:12:26:20|Pruning register bits 95 to 80 of gen_dequant[2].data_out[95:64]. If this is not the intended behavior, drive the inputs with valid values, or inputs from the top level.
+@W: CL279 :"/home/tnj0921/Documents/LLMReaserch/DEQUANTIZE/DEQUANTIZE.sv":26:12:26:20|Pruning register bits 63 to 48 of gen_dequant[1].data_out[63:32]. If this is not the intended behavior, drive the inputs with valid values, or inputs from the top level.
+@W: CL279 :"/home/tnj0921/Documents/LLMReaserch/DEQUANTIZE/DEQUANTIZE.sv":26:12:26:20|Pruning register bits 31 to 16 of gen_dequant[0].data_out[31:0]. If this is not the intended behavior, drive the inputs with valid values, or inputs from the top level.
+
+For a summary of runtime and memory usage per design unit, please see file:
+==========================================================
+@L: /home/tnj0921/Documents/LLMReaserch/DEQUANTIZE/synwork/layer0.rt.csv
+
+
+At c_ver Exit (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 85MB peak: 86MB)
+
+Process took 0h:00m:01s realtime, 0h:00m:01s cputime
+
+Process completed successfully.
+# Thu May  7 04:00:04 2026
+
+###########################################################]
+###########################################################[
+
+Copyright (C) 1994-2018 Synopsys, Inc.
+This Synopsys software and all associated documentation are proprietary to Synopsys, Inc.
+and may only be used pursuant to the terms and conditions of a written license agreement
+with Synopsys, Inc. All other use, reproduction, modification, or distribution of the
+Synopsys software or the associated documentation is strictly prohibited.
+Tool: Synplify (R)
+Build: O-2018.09-SP1
+Install: /vol/synopsys/fpga/O-2018.09-SP1
+OS: Red Hat Enterprise Linux 8.10 (Ootpa)
+Hostname: huntress.ece.northwestern.edu
+max virtual memory: unlimited (bytes)
+max user processes: 126617
+max stack size: 8388608 (bytes)
+
+
+Implementation : DEQUANTIZE
+Synopsys Synopsys Netlist Linker, Version comp2018q4p1, Build 004R, Built Nov 27 2018 21:19:49
+
+@N|Running in 64-bit mode
+@N: NF107 :"/home/tnj0921/Documents/LLMReaserch/DEQUANTIZE/DEQUANTIZE.sv":4:7:4:16|Selected library: work cell: DEQUANTIZE view verilog as top level
+@N: NF107 :"/home/tnj0921/Documents/LLMReaserch/DEQUANTIZE/DEQUANTIZE.sv":4:7:4:16|Selected library: work cell: DEQUANTIZE view verilog as top level
+
+At syn_nfilter Exit (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 67MB peak: 68MB)
+
+Process took 0h:00m:01s realtime, 0h:00m:01s cputime
+
+Process completed successfully.
+# Thu May  7 04:00:04 2026
+
+###########################################################]
+@END
+
+At c_hdl Exit (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 3MB peak: 4MB)
+
+Process took 0h:00m:01s realtime, 0h:00m:01s cputime
+
+Process completed successfully.
+# Thu May  7 04:00:05 2026
+
+###########################################################]
+###########################################################[
+
+Copyright (C) 1994-2018 Synopsys, Inc.
+This Synopsys software and all associated documentation are proprietary to Synopsys, Inc.
+and may only be used pursuant to the terms and conditions of a written license agreement
+with Synopsys, Inc. All other use, reproduction, modification, or distribution of the
+Synopsys software or the associated documentation is strictly prohibited.
+Tool: Synplify (R)
+Build: O-2018.09-SP1
+Install: /vol/synopsys/fpga/O-2018.09-SP1
+OS: Red Hat Enterprise Linux 8.10 (Ootpa)
+Hostname: huntress.ece.northwestern.edu
+max virtual memory: unlimited (bytes)
+max user processes: 126617
+max stack size: 8388608 (bytes)
+
+
+Implementation : DEQUANTIZE
+Synopsys Synopsys Netlist Linker, Version comp2018q4p1, Build 004R, Built Nov 27 2018 21:19:49
+
+@N|Running in 64-bit mode
+@N: NF107 :"/home/tnj0921/Documents/LLMReaserch/DEQUANTIZE/DEQUANTIZE.sv":4:7:4:16|Selected library: work cell: DEQUANTIZE view verilog as top level
+@N: NF107 :"/home/tnj0921/Documents/LLMReaserch/DEQUANTIZE/DEQUANTIZE.sv":4:7:4:16|Selected library: work cell: DEQUANTIZE view verilog as top level
+
+At syn_nfilter Exit (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 67MB peak: 68MB)
+
+Process took 0h:00m:01s realtime, 0h:00m:01s cputime
+
+Process completed successfully.
+# Thu May  7 04:00:06 2026
+
+###########################################################]
+Premap Report
+
+# Thu May  7 04:00:06 2026
+
+
+Copyright (C) 1994-2018 Synopsys, Inc.
+This Synopsys software and all associated documentation are proprietary to Synopsys, Inc.
+and may only be used pursuant to the terms and conditions of a written license agreement
+with Synopsys, Inc. All other use, reproduction, modification, or distribution of the
+Synopsys software or the associated documentation is strictly prohibited.
+Tool: Synplify (R)
+Build: O-2018.09-SP1
+Install: /vol/synopsys/fpga/O-2018.09-SP1
+OS: Red Hat Enterprise Linux 8.10 (Ootpa)
+Hostname: huntress.ece.northwestern.edu
+max virtual memory: unlimited (bytes)
+max user processes: 126617
+max stack size: 8388608 (bytes)
+
+
+Implementation : DEQUANTIZE
+Synopsys Intel FPGA Technology Pre-mapping, Version maprc, Build 4745R, Built Nov 27 2018 21:14:52
+
+
+Mapper Startup Complete (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 98MB peak: 99MB)
+
+@A: MF827 |No constraint file specified.
+@N: MF284 |Setting synthesis effort to medium for the design
+@L: /home/tnj0921/Documents/LLMReaserch/DEQUANTIZE/DEQUANT_scck.rpt 
+Printing clock  summary report in "/home/tnj0921/Documents/LLMReaserch/DEQUANTIZE/DEQUANT_scck.rpt" file 
+@N: MF916 |Option synthesis_strategy=base is enabled. 
+@N: MF248 |Running in 64-bit mode.
+
+Design Input Complete (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 99MB peak: 101MB)
+
+
+Mapper Initialization Complete (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 99MB peak: 101MB)
+
+@W: FA406 |Environment variable QUARTUS_ROOTDIR not set. Cannot determine PAR version.
+@N: FA350 |Clearbox flow is not supported when QUARTUS_ROOTDIR is not set
+@N: FA351 |Clearbox flow is not supported because clearbox does not exist
+@W: FA352 |Not using the Clearbox flow might affect timing correlation and Quality of Results (QoR).
+@N: MF284 |Setting synthesis effort to medium for the design
+
+Finished Clear Box Flow. (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 115MB peak: 117MB)
+
+@N: MH105 |UMR3 is only supported for HAPS-80.
+@N: MH105 |UMR3 is only supported for HAPS-80.
+
+Finished netlist restructuring (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 115MB peak: 117MB)
+
+
+
+Clock Summary
+******************
+
+          Start              Requested     Requested     Clock        Clock                   Clock
+Level     Clock              Frequency     Period        Type         Group                   Load 
+---------------------------------------------------------------------------------------------------
+0 -       DEQUANTIZE|clk     1.0 MHz       1000.000      inferred     Inferred_clkgroup_0     65   
+===================================================================================================
+
+
+
+Clock Load Summary
+***********************
+
+                   Clock     Source        Clock Pin       Non-clock Pin     Non-clock Pin
+Clock              Load      Pin           Seq Example     Seq Example       Comb Example 
+------------------------------------------------------------------------------------------
+DEQUANTIZE|clk     65        clk(port)     vld_reg.C       -                 -            
+==========================================================================================
+
+@W: MT530 :"/home/tnj0921/Documents/LLMReaserch/DEQUANTIZE/DEQUANTIZE.sv":26:12:26:20|Found inferred clock DEQUANTIZE|clk which controls 65 sequential elements including gen_dequant\[3\]\.data_out[111:96]. This clock has no specified timing constraint which may adversely impact design performance. 
+
+Finished Pre Mapping Phase.
+@N: BN225 |Writing default property annotation file /home/tnj0921/Documents/LLMReaserch/DEQUANTIZE/DEQUANT.sap.
+
+Starting constraint checker (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 115MB peak: 118MB)
+
+
+Finished constraint checker preprocessing (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 115MB peak: 118MB)
+
+None
+None
+
+Finished constraint checker (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 115MB peak: 118MB)
+
+Pre-mapping successful!
+
+At Mapper Exit (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 30MB peak: 118MB)
+
+Process took 0h:00m:01s realtime, 0h:00m:01s cputime
+# Thu May  7 04:00:06 2026
+
+###########################################################]
+Map & Optimize Report
+
+# Thu May  7 04:00:06 2026
+
+
+Copyright (C) 1994-2018 Synopsys, Inc.
+This Synopsys software and all associated documentation are proprietary to Synopsys, Inc.
+and may only be used pursuant to the terms and conditions of a written license agreement
+with Synopsys, Inc. All other use, reproduction, modification, or distribution of the
+Synopsys software or the associated documentation is strictly prohibited.
+Tool: Synplify (R)
+Build: O-2018.09-SP1
+Install: /vol/synopsys/fpga/O-2018.09-SP1
+OS: Red Hat Enterprise Linux 8.10 (Ootpa)
+Hostname: huntress.ece.northwestern.edu
+max virtual memory: unlimited (bytes)
+max user processes: 126617
+max stack size: 8388608 (bytes)
+
+
+Implementation : DEQUANTIZE
+Synopsys Intel FPGA Technology Mapper, Version maprc, Build 4745R, Built Nov 27 2018 21:14:52
+
+
+Mapper Startup Complete (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 98MB peak: 99MB)
+
+@N: MF284 |Setting synthesis effort to medium for the design
+@N: MF916 |Option synthesis_strategy=base is enabled. 
+@N: MF248 |Running in 64-bit mode.
+
+Design Input Complete (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 98MB peak: 100MB)
+
+
+Mapper Initialization Complete (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 98MB peak: 100MB)
+
+@W: FA406 |Environment variable QUARTUS_ROOTDIR not set. Cannot determine PAR version.
+@N: FA350 |Clearbox flow is not supported when QUARTUS_ROOTDIR is not set
+@N: FA351 |Clearbox flow is not supported because clearbox does not exist
+@W: FA352 |Not using the Clearbox flow might affect timing correlation and Quality of Results (QoR).
+@N: MF284 |Setting synthesis effort to medium for the design
+
+
+Starting Optimization and Mapping (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 115MB peak: 116MB)
+
+
+Available hyper_sources - for debug and ip models
+	None Found
+
+
+Finished RTL optimizations (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 115MB peak: 116MB)
+
+@N: BN362 :"/home/tnj0921/Documents/LLMReaserch/DEQUANTIZE/DEQUANTIZE.sv":26:12:26:20|Removing sequential instance NoName (in view: work.DEQUANTIZE(verilog)) of type view:PrimLib.dffr(prim) because it does not drive other instances.
+@A: BN291 :"/home/tnj0921/Documents/LLMReaserch/DEQUANTIZE/DEQUANTIZE.sv":26:12:26:20|Boundary register NoName (in view: work.DEQUANTIZE(verilog)) is packed into a complex cell. To disable register packing, set syn_keep=1 on the net between the register and the complex cell. 
+@N: BN362 :"/home/tnj0921/Documents/LLMReaserch/DEQUANTIZE/DEQUANTIZE.sv":26:12:26:20|Removing sequential instance NoName_0 (in view: work.DEQUANTIZE(verilog)) of type view:PrimLib.dffr(prim) because it does not drive other instances.
+@A: BN291 :"/home/tnj0921/Documents/LLMReaserch/DEQUANTIZE/DEQUANTIZE.sv":26:12:26:20|Boundary register NoName_0 (in view: work.DEQUANTIZE(verilog)) is packed into a complex cell. To disable register packing, set syn_keep=1 on the net between the register and the complex cell. 
+@N: BN362 :"/home/tnj0921/Documents/LLMReaserch/DEQUANTIZE/DEQUANTIZE.sv":26:12:26:20|Removing sequential instance NoName_1 (in view: work.DEQUANTIZE(verilog)) of type view:PrimLib.dffr(prim) because it does not drive other instances.
+@A: BN291 :"/home/tnj0921/Documents/LLMReaserch/DEQUANTIZE/DEQUANTIZE.sv":26:12:26:20|Boundary register NoName_1 (in view: work.DEQUANTIZE(verilog)) is packed into a complex cell. To disable register packing, set syn_keep=1 on the net between the register and the complex cell. 
+@N: BN362 :"/home/tnj0921/Documents/LLMReaserch/DEQUANTIZE/DEQUANTIZE.sv":26:12:26:20|Removing sequential instance NoName_2 (in view: work.DEQUANTIZE(verilog)) of type view:PrimLib.dffr(prim) because it does not drive other instances.
+@A: BN291 :"/home/tnj0921/Documents/LLMReaserch/DEQUANTIZE/DEQUANTIZE.sv":26:12:26:20|Boundary register NoName_2 (in view: work.DEQUANTIZE(verilog)) is packed into a complex cell. To disable register packing, set syn_keep=1 on the net between the register and the complex cell. 
+@N: BN362 :"/home/tnj0921/Documents/LLMReaserch/DEQUANTIZE/DEQUANTIZE.sv":26:12:26:20|Removing sequential instance NoName_3 (in view: work.DEQUANTIZE(verilog)) of type view:PrimLib.dffr(prim) because it does not drive other instances.
+@A: BN291 :"/home/tnj0921/Documents/LLMReaserch/DEQUANTIZE/DEQUANTIZE.sv":26:12:26:20|Boundary register NoName_3 (in view: work.DEQUANTIZE(verilog)) is packed into a complex cell. To disable register packing, set syn_keep=1 on the net between the register and the complex cell. 
+@N: BN362 :"/home/tnj0921/Documents/LLMReaserch/DEQUANTIZE/DEQUANTIZE.sv":26:12:26:20|Removing sequential instance NoName_4 (in view: work.DEQUANTIZE(verilog)) of type view:PrimLib.dffr(prim) because it does not drive other instances.
+@A: BN291 :"/home/tnj0921/Documents/LLMReaserch/DEQUANTIZE/DEQUANTIZE.sv":26:12:26:20|Boundary register NoName_4 (in view: work.DEQUANTIZE(verilog)) is packed into a complex cell. To disable register packing, set syn_keep=1 on the net between the register and the complex cell. 
+@N: BN362 :"/home/tnj0921/Documents/LLMReaserch/DEQUANTIZE/DEQUANTIZE.sv":26:12:26:20|Removing sequential instance NoName_5 (in view: work.DEQUANTIZE(verilog)) of type view:PrimLib.dffr(prim) because it does not drive other instances.
+@A: BN291 :"/home/tnj0921/Documents/LLMReaserch/DEQUANTIZE/DEQUANTIZE.sv":26:12:26:20|Boundary register NoName_5 (in view: work.DEQUANTIZE(verilog)) is packed into a complex cell. To disable register packing, set syn_keep=1 on the net between the register and the complex cell. 
+@N: BN362 :"/home/tnj0921/Documents/LLMReaserch/DEQUANTIZE/DEQUANTIZE.sv":26:12:26:20|Removing sequential instance NoName_6 (in view: work.DEQUANTIZE(verilog)) of type view:PrimLib.dffr(prim) because it does not drive other instances.
+@A: BN291 :"/home/tnj0921/Documents/LLMReaserch/DEQUANTIZE/DEQUANTIZE.sv":26:12:26:20|Boundary register NoName_6 (in view: work.DEQUANTIZE(verilog)) is packed into a complex cell. To disable register packing, set syn_keep=1 on the net between the register and the complex cell. 
+@N: BN362 :"/home/tnj0921/Documents/LLMReaserch/DEQUANTIZE/DEQUANTIZE.sv":26:12:26:20|Removing sequential instance NoName_7 (in view: work.DEQUANTIZE(verilog)) of type view:PrimLib.dffr(prim) because it does not drive other instances.
+@A: BN291 :"/home/tnj0921/Documents/LLMReaserch/DEQUANTIZE/DEQUANTIZE.sv":26:12:26:20|Boundary register NoName_7 (in view: work.DEQUANTIZE(verilog)) is packed into a complex cell. To disable register packing, set syn_keep=1 on the net between the register and the complex cell. 
+@N: BN362 :"/home/tnj0921/Documents/LLMReaserch/DEQUANTIZE/DEQUANTIZE.sv":26:12:26:20|Removing sequential instance NoName_8 (in view: work.DEQUANTIZE(verilog)) of type view:PrimLib.dffr(prim) because it does not drive other instances.
+@A: BN291 :"/home/tnj0921/Documents/LLMReaserch/DEQUANTIZE/DEQUANTIZE.sv":26:12:26:20|Boundary register NoName_8 (in view: work.DEQUANTIZE(verilog)) is packed into a complex cell. To disable register packing, set syn_keep=1 on the net between the register and the complex cell. 
+@N: BN362 :"/home/tnj0921/Documents/LLMReaserch/DEQUANTIZE/DEQUANTIZE.sv":26:12:26:20|Removing sequential instance NoName_9 (in view: work.DEQUANTIZE(verilog)) of type view:PrimLib.dffr(prim) because it does not drive other instances.
+@A: BN291 :"/home/tnj0921/Documents/LLMReaserch/DEQUANTIZE/DEQUANTIZE.sv":26:12:26:20|Boundary register NoName_9 (in view: work.DEQUANTIZE(verilog)) is packed into a complex cell. To disable register packing, set syn_keep=1 on the net between the register and the complex cell. 
+@N: BN362 :"/home/tnj0921/Documents/LLMReaserch/DEQUANTIZE/DEQUANTIZE.sv":26:12:26:20|Removing sequential instance NoName_10 (in view: work.DEQUANTIZE(verilog)) of type view:PrimLib.dffr(prim) because it does not drive other instances.
+@A: BN291 :"/home/tnj0921/Documents/LLMReaserch/DEQUANTIZE/DEQUANTIZE.sv":26:12:26:20|Boundary register NoName_10 (in view: work.DEQUANTIZE(verilog)) is packed into a complex cell. To disable register packing, set syn_keep=1 on the net between the register and the complex cell. 
+@N: BN362 :"/home/tnj0921/Documents/LLMReaserch/DEQUANTIZE/DEQUANTIZE.sv":26:12:26:20|Removing sequential instance NoName_11 (in view: work.DEQUANTIZE(verilog)) of type view:PrimLib.dffr(prim) because it does not drive other instances.
+@A: BN291 :"/home/tnj0921/Documents/LLMReaserch/DEQUANTIZE/DEQUANTIZE.sv":26:12:26:20|Boundary register NoName_11 (in view: work.DEQUANTIZE(verilog)) is packed into a complex cell. To disable register packing, set syn_keep=1 on the net between the register and the complex cell. 
+@N: BN362 :"/home/tnj0921/Documents/LLMReaserch/DEQUANTIZE/DEQUANTIZE.sv":26:12:26:20|Removing sequential instance NoName_12 (in view: work.DEQUANTIZE(verilog)) of type view:PrimLib.dffr(prim) because it does not drive other instances.
+@A: BN291 :"/home/tnj0921/Documents/LLMReaserch/DEQUANTIZE/DEQUANTIZE.sv":26:12:26:20|Boundary register NoName_12 (in view: work.DEQUANTIZE(verilog)) is packed into a complex cell. To disable register packing, set syn_keep=1 on the net between the register and the complex cell. 
+@N: BN362 :"/home/tnj0921/Documents/LLMReaserch/DEQUANTIZE/DEQUANTIZE.sv":26:12:26:20|Removing sequential instance NoName_13 (in view: work.DEQUANTIZE(verilog)) of type view:PrimLib.dffr(prim) because it does not drive other instances.
+@A: BN291 :"/home/tnj0921/Documents/LLMReaserch/DEQUANTIZE/DEQUANTIZE.sv":26:12:26:20|Boundary register NoName_13 (in view: work.DEQUANTIZE(verilog)) is packed into a complex cell. To disable register packing, set syn_keep=1 on the net between the register and the complex cell. 
+@N: BN362 :"/home/tnj0921/Documents/LLMReaserch/DEQUANTIZE/DEQUANTIZE.sv":26:12:26:20|Removing sequential instance NoName_14 (in view: work.DEQUANTIZE(verilog)) of type view:PrimLib.dffr(prim) because it does not drive other instances.
+@A: BN291 :"/home/tnj0921/Documents/LLMReaserch/DEQUANTIZE/DEQUANTIZE.sv":26:12:26:20|Boundary register NoName_14 (in view: work.DEQUANTIZE(verilog)) is packed into a complex cell. To disable register packing, set syn_keep=1 on the net between the register and the complex cell. 
+@N: BN362 :"/home/tnj0921/Documents/LLMReaserch/DEQUANTIZE/DEQUANTIZE.sv":26:12:26:20|Removing sequential instance NoName_15 (in view: work.DEQUANTIZE(verilog)) of type view:PrimLib.dffr(prim) because it does not drive other instances.
+@A: BN291 :"/home/tnj0921/Documents/LLMReaserch/DEQUANTIZE/DEQUANTIZE.sv":26:12:26:20|Boundary register NoName_15 (in view: work.DEQUANTIZE(verilog)) is packed into a complex cell. To disable register packing, set syn_keep=1 on the net between the register and the complex cell. 
+@N: BN362 :"/home/tnj0921/Documents/LLMReaserch/DEQUANTIZE/DEQUANTIZE.sv":26:12:26:20|Removing sequential instance NoName_16 (in view: work.DEQUANTIZE(verilog)) of type view:PrimLib.dffr(prim) because it does not drive other instances.
+@A: BN291 :"/home/tnj0921/Documents/LLMReaserch/DEQUANTIZE/DEQUANTIZE.sv":26:12:26:20|Boundary register NoName_16 (in view: work.DEQUANTIZE(verilog)) is packed into a complex cell. To disable register packing, set syn_keep=1 on the net between the register and the complex cell. 
+@N: BN362 :"/home/tnj0921/Documents/LLMReaserch/DEQUANTIZE/DEQUANTIZE.sv":26:12:26:20|Removing sequential instance NoName_17 (in view: work.DEQUANTIZE(verilog)) of type view:PrimLib.dffr(prim) because it does not drive other instances.
+@A: BN291 :"/home/tnj0921/Documents/LLMReaserch/DEQUANTIZE/DEQUANTIZE.sv":26:12:26:20|Boundary register NoName_17 (in view: work.DEQUANTIZE(verilog)) is packed into a complex cell. To disable register packing, set syn_keep=1 on the net between the register and the complex cell. 
+@N: BN362 :"/home/tnj0921/Documents/LLMReaserch/DEQUANTIZE/DEQUANTIZE.sv":26:12:26:20|Removing sequential instance NoName_18 (in view: work.DEQUANTIZE(verilog)) of type view:PrimLib.dffr(prim) because it does not drive other instances.
+@A: BN291 :"/home/tnj0921/Documents/LLMReaserch/DEQUANTIZE/DEQUANTIZE.sv":26:12:26:20|Boundary register NoName_18 (in view: work.DEQUANTIZE(verilog)) is packed into a complex cell. To disable register packing, set syn_keep=1 on the net between the register and the complex cell. 
+@N: BN362 :"/home/tnj0921/Documents/LLMReaserch/DEQUANTIZE/DEQUANTIZE.sv":26:12:26:20|Removing sequential instance NoName_19 (in view: work.DEQUANTIZE(verilog)) of type view:PrimLib.dffr(prim) because it does not drive other instances.
+@A: BN291 :"/home/tnj0921/Documents/LLMReaserch/DEQUANTIZE/DEQUANTIZE.sv":26:12:26:20|Boundary register NoName_19 (in view: work.DEQUANTIZE(verilog)) is packed into a complex cell. To disable register packing, set syn_keep=1 on the net between the register and the complex cell. 
+@N: BN362 :"/home/tnj0921/Documents/LLMReaserch/DEQUANTIZE/DEQUANTIZE.sv":26:12:26:20|Removing sequential instance NoName_20 (in view: work.DEQUANTIZE(verilog)) of type view:PrimLib.dffr(prim) because it does not drive other instances.
+@A: BN291 :"/home/tnj0921/Documents/LLMReaserch/DEQUANTIZE/DEQUANTIZE.sv":26:12:26:20|Boundary register NoName_20 (in view: work.DEQUANTIZE(verilog)) is packed into a complex cell. To disable register packing, set syn_keep=1 on the net between the register and the complex cell. 
+@N: BN362 :"/home/tnj0921/Documents/LLMReaserch/DEQUANTIZE/DEQUANTIZE.sv":26:12:26:20|Removing sequential instance NoName_21 (in view: work.DEQUANTIZE(verilog)) of type view:PrimLib.dffr(prim) because it does not drive other instances.
+@A: BN291 :"/home/tnj0921/Documents/LLMReaserch/DEQUANTIZE/DEQUANTIZE.sv":26:12:26:20|Boundary register NoName_21 (in view: work.DEQUANTIZE(verilog)) is packed into a complex cell. To disable register packing, set syn_keep=1 on the net between the register and the complex cell. 
+@N: BN362 :"/home/tnj0921/Documents/LLMReaserch/DEQUANTIZE/DEQUANTIZE.sv":26:12:26:20|Removing sequential instance NoName_22 (in view: work.DEQUANTIZE(verilog)) of type view:PrimLib.dffr(prim) because it does not drive other instances.
+@A: BN291 :"/home/tnj0921/Documents/LLMReaserch/DEQUANTIZE/DEQUANTIZE.sv":26:12:26:20|Boundary register NoName_22 (in view: work.DEQUANTIZE(verilog)) is packed into a complex cell. To disable register packing, set syn_keep=1 on the net between the register and the complex cell. 
+@N: BN362 :"/home/tnj0921/Documents/LLMReaserch/DEQUANTIZE/DEQUANTIZE.sv":26:12:26:20|Removing sequential instance NoName_23 (in view: work.DEQUANTIZE(verilog)) of type view:PrimLib.dffr(prim) because it does not drive other instances.
+@A: BN291 :"/home/tnj0921/Documents/LLMReaserch/DEQUANTIZE/DEQUANTIZE.sv":26:12:26:20|Boundary register NoName_23 (in view: work.DEQUANTIZE(verilog)) is packed into a complex cell. To disable register packing, set syn_keep=1 on the net between the register and the complex cell. 
+@N: BN362 :"/home/tnj0921/Documents/LLMReaserch/DEQUANTIZE/DEQUANTIZE.sv":26:12:26:20|Removing sequential instance NoName_24 (in view: work.DEQUANTIZE(verilog)) of type view:PrimLib.dffr(prim) because it does not drive other instances.
+@A: BN291 :"/home/tnj0921/Documents/LLMReaserch/DEQUANTIZE/DEQUANTIZE.sv":26:12:26:20|Boundary register NoName_24 (in view: work.DEQUANTIZE(verilog)) is packed into a complex cell. To disable register packing, set syn_keep=1 on the net between the register and the complex cell. 
+@N: BN362 :"/home/tnj0921/Documents/LLMReaserch/DEQUANTIZE/DEQUANTIZE.sv":26:12:26:20|Removing sequential instance NoName_25 (in view: work.DEQUANTIZE(verilog)) of type view:PrimLib.dffr(prim) because it does not drive other instances.
+@A: BN291 :"/home/tnj0921/Documents/LLMReaserch/DEQUANTIZE/DEQUANTIZE.sv":26:12:26:20|Boundary register NoName_25 (in view: work.DEQUANTIZE(verilog)) is packed into a complex cell. To disable register packing, set syn_keep=1 on the net between the register and the complex cell. 
+@N: BN362 :"/home/tnj0921/Documents/LLMReaserch/DEQUANTIZE/DEQUANTIZE.sv":26:12:26:20|Removing sequential instance NoName_26 (in view: work.DEQUANTIZE(verilog)) of type view:PrimLib.dffr(prim) because it does not drive other instances.
+@A: BN291 :"/home/tnj0921/Documents/LLMReaserch/DEQUANTIZE/DEQUANTIZE.sv":26:12:26:20|Boundary register NoName_26 (in view: work.DEQUANTIZE(verilog)) is packed into a complex cell. To disable register packing, set syn_keep=1 on the net between the register and the complex cell. 
+@N: BN362 :"/home/tnj0921/Documents/LLMReaserch/DEQUANTIZE/DEQUANTIZE.sv":26:12:26:20|Removing sequential instance NoName_27 (in view: work.DEQUANTIZE(verilog)) of type view:PrimLib.dffr(prim) because it does not drive other instances.
+@A: BN291 :"/home/tnj0921/Documents/LLMReaserch/DEQUANTIZE/DEQUANTIZE.sv":26:12:26:20|Boundary register NoName_27 (in view: work.DEQUANTIZE(verilog)) is packed into a complex cell. To disable register packing, set syn_keep=1 on the net between the register and the complex cell. 
+@N: BN362 :"/home/tnj0921/Documents/LLMReaserch/DEQUANTIZE/DEQUANTIZE.sv":26:12:26:20|Removing sequential instance NoName_28 (in view: work.DEQUANTIZE(verilog)) of type view:PrimLib.dffr(prim) because it does not drive other instances.
+@A: BN291 :"/home/tnj0921/Documents/LLMReaserch/DEQUANTIZE/DEQUANTIZE.sv":26:12:26:20|Boundary register NoName_28 (in view: work.DEQUANTIZE(verilog)) is packed into a complex cell. To disable register packing, set syn_keep=1 on the net between the register and the complex cell. 
+@N: BN362 :"/home/tnj0921/Documents/LLMReaserch/DEQUANTIZE/DEQUANTIZE.sv":26:12:26:20|Removing sequential instance NoName_29 (in view: work.DEQUANTIZE(verilog)) of type view:PrimLib.dffr(prim) because it does not drive other instances.
+@A: BN291 :"/home/tnj0921/Documents/LLMReaserch/DEQUANTIZE/DEQUANTIZE.sv":26:12:26:20|Boundary register NoName_29 (in view: work.DEQUANTIZE(verilog)) is packed into a complex cell. To disable register packing, set syn_keep=1 on the net between the register and the complex cell. 
+@N: BN362 :"/home/tnj0921/Documents/LLMReaserch/DEQUANTIZE/DEQUANTIZE.sv":26:12:26:20|Removing sequential instance NoName_30 (in view: work.DEQUANTIZE(verilog)) of type view:PrimLib.dffr(prim) because it does not drive other instances.
+@A: BN291 :"/home/tnj0921/Documents/LLMReaserch/DEQUANTIZE/DEQUANTIZE.sv":26:12:26:20|Boundary register NoName_30 (in view: work.DEQUANTIZE(verilog)) is packed into a complex cell. To disable register packing, set syn_keep=1 on the net between the register and the complex cell. 
+@N: BN362 :"/home/tnj0921/Documents/LLMReaserch/DEQUANTIZE/DEQUANTIZE.sv":26:12:26:20|Removing sequential instance NoName_31 (in view: work.DEQUANTIZE(verilog)) of type view:PrimLib.dffr(prim) because it does not drive other instances.
+@A: BN291 :"/home/tnj0921/Documents/LLMReaserch/DEQUANTIZE/DEQUANTIZE.sv":26:12:26:20|Boundary register NoName_31 (in view: work.DEQUANTIZE(verilog)) is packed into a complex cell. To disable register packing, set syn_keep=1 on the net between the register and the complex cell. 
+@N: BN362 :"/home/tnj0921/Documents/LLMReaserch/DEQUANTIZE/DEQUANTIZE.sv":26:12:26:20|Removing sequential instance NoName_32 (in view: work.DEQUANTIZE(verilog)) of type view:PrimLib.dffr(prim) because it does not drive other instances.
+@A: BN291 :"/home/tnj0921/Documents/LLMReaserch/DEQUANTIZE/DEQUANTIZE.sv":26:12:26:20|Boundary register NoName_32 (in view: work.DEQUANTIZE(verilog)) is packed into a complex cell. To disable register packing, set syn_keep=1 on the net between the register and the complex cell. 
+@N: BN362 :"/home/tnj0921/Documents/LLMReaserch/DEQUANTIZE/DEQUANTIZE.sv":26:12:26:20|Removing sequential instance NoName_33 (in view: work.DEQUANTIZE(verilog)) of type view:PrimLib.dffr(prim) because it does not drive other instances.
+@A: BN291 :"/home/tnj0921/Documents/LLMReaserch/DEQUANTIZE/DEQUANTIZE.sv":26:12:26:20|Boundary register NoName_33 (in view: work.DEQUANTIZE(verilog)) is packed into a complex cell. To disable register packing, set syn_keep=1 on the net between the register and the complex cell. 
+@N: BN362 :"/home/tnj0921/Documents/LLMReaserch/DEQUANTIZE/DEQUANTIZE.sv":26:12:26:20|Removing sequential instance NoName_34 (in view: work.DEQUANTIZE(verilog)) of type view:PrimLib.dffr(prim) because it does not drive other instances.
+@A: BN291 :"/home/tnj0921/Documents/LLMReaserch/DEQUANTIZE/DEQUANTIZE.sv":26:12:26:20|Boundary register NoName_34 (in view: work.DEQUANTIZE(verilog)) is packed into a complex cell. To disable register packing, set syn_keep=1 on the net between the register and the complex cell. 
+@N: BN362 :"/home/tnj0921/Documents/LLMReaserch/DEQUANTIZE/DEQUANTIZE.sv":26:12:26:20|Removing sequential instance NoName_35 (in view: work.DEQUANTIZE(verilog)) of type view:PrimLib.dffr(prim) because it does not drive other instances.
+@A: BN291 :"/home/tnj0921/Documents/LLMReaserch/DEQUANTIZE/DEQUANTIZE.sv":26:12:26:20|Boundary register NoName_35 (in view: work.DEQUANTIZE(verilog)) is packed into a complex cell. To disable register packing, set syn_keep=1 on the net between the register and the complex cell. 
+@N: BN362 :"/home/tnj0921/Documents/LLMReaserch/DEQUANTIZE/DEQUANTIZE.sv":26:12:26:20|Removing sequential instance NoName_36 (in view: work.DEQUANTIZE(verilog)) of type view:PrimLib.dffr(prim) because it does not drive other instances.
+@A: BN291 :"/home/tnj0921/Documents/LLMReaserch/DEQUANTIZE/DEQUANTIZE.sv":26:12:26:20|Boundary register NoName_36 (in view: work.DEQUANTIZE(verilog)) is packed into a complex cell. To disable register packing, set syn_keep=1 on the net between the register and the complex cell. 
+@N: BN362 :"/home/tnj0921/Documents/LLMReaserch/DEQUANTIZE/DEQUANTIZE.sv":26:12:26:20|Removing sequential instance NoName_37 (in view: work.DEQUANTIZE(verilog)) of type view:PrimLib.dffr(prim) because it does not drive other instances.
+@A: BN291 :"/home/tnj0921/Documents/LLMReaserch/DEQUANTIZE/DEQUANTIZE.sv":26:12:26:20|Boundary register NoName_37 (in view: work.DEQUANTIZE(verilog)) is packed into a complex cell. To disable register packing, set syn_keep=1 on the net between the register and the complex cell. 
+@N: BN362 :"/home/tnj0921/Documents/LLMReaserch/DEQUANTIZE/DEQUANTIZE.sv":26:12:26:20|Removing sequential instance NoName_38 (in view: work.DEQUANTIZE(verilog)) of type view:PrimLib.dffr(prim) because it does not drive other instances.
+@A: BN291 :"/home/tnj0921/Documents/LLMReaserch/DEQUANTIZE/DEQUANTIZE.sv":26:12:26:20|Boundary register NoName_38 (in view: work.DEQUANTIZE(verilog)) is packed into a complex cell. To disable register packing, set syn_keep=1 on the net between the register and the complex cell. 
+@N: BN362 :"/home/tnj0921/Documents/LLMReaserch/DEQUANTIZE/DEQUANTIZE.sv":26:12:26:20|Removing sequential instance NoName_39 (in view: work.DEQUANTIZE(verilog)) of type view:PrimLib.dffr(prim) because it does not drive other instances.
+@A: BN291 :"/home/tnj0921/Documents/LLMReaserch/DEQUANTIZE/DEQUANTIZE.sv":26:12:26:20|Boundary register NoName_39 (in view: work.DEQUANTIZE(verilog)) is packed into a complex cell. To disable register packing, set syn_keep=1 on the net between the register and the complex cell. 
+@N: BN362 :"/home/tnj0921/Documents/LLMReaserch/DEQUANTIZE/DEQUANTIZE.sv":26:12:26:20|Removing sequential instance NoName_40 (in view: work.DEQUANTIZE(verilog)) of type view:PrimLib.dffr(prim) because it does not drive other instances.
+@A: BN291 :"/home/tnj0921/Documents/LLMReaserch/DEQUANTIZE/DEQUANTIZE.sv":26:12:26:20|Boundary register NoName_40 (in view: work.DEQUANTIZE(verilog)) is packed into a complex cell. To disable register packing, set syn_keep=1 on the net between the register and the complex cell. 
+@N: BN362 :"/home/tnj0921/Documents/LLMReaserch/DEQUANTIZE/DEQUANTIZE.sv":26:12:26:20|Removing sequential instance NoName_41 (in view: work.DEQUANTIZE(verilog)) of type view:PrimLib.dffr(prim) because it does not drive other instances.
+@A: BN291 :"/home/tnj0921/Documents/LLMReaserch/DEQUANTIZE/DEQUANTIZE.sv":26:12:26:20|Boundary register NoName_41 (in view: work.DEQUANTIZE(verilog)) is packed into a complex cell. To disable register packing, set syn_keep=1 on the net between the register and the complex cell. 
+@N: BN362 :"/home/tnj0921/Documents/LLMReaserch/DEQUANTIZE/DEQUANTIZE.sv":26:12:26:20|Removing sequential instance NoName_42 (in view: work.DEQUANTIZE(verilog)) of type view:PrimLib.dffr(prim) because it does not drive other instances.
+@A: BN291 :"/home/tnj0921/Documents/LLMReaserch/DEQUANTIZE/DEQUANTIZE.sv":26:12:26:20|Boundary register NoName_42 (in view: work.DEQUANTIZE(verilog)) is packed into a complex cell. To disable register packing, set syn_keep=1 on the net between the register and the complex cell. 
+@N: BN362 :"/home/tnj0921/Documents/LLMReaserch/DEQUANTIZE/DEQUANTIZE.sv":26:12:26:20|Removing sequential instance NoName_43 (in view: work.DEQUANTIZE(verilog)) of type view:PrimLib.dffr(prim) because it does not drive other instances.
+@A: BN291 :"/home/tnj0921/Documents/LLMReaserch/DEQUANTIZE/DEQUANTIZE.sv":26:12:26:20|Boundary register NoName_43 (in view: work.DEQUANTIZE(verilog)) is packed into a complex cell. To disable register packing, set syn_keep=1 on the net between the register and the complex cell. 
+@N: BN362 :"/home/tnj0921/Documents/LLMReaserch/DEQUANTIZE/DEQUANTIZE.sv":26:12:26:20|Removing sequential instance NoName_44 (in view: work.DEQUANTIZE(verilog)) of type view:PrimLib.dffr(prim) because it does not drive other instances.
+@A: BN291 :"/home/tnj0921/Documents/LLMReaserch/DEQUANTIZE/DEQUANTIZE.sv":26:12:26:20|Boundary register NoName_44 (in view: work.DEQUANTIZE(verilog)) is packed into a complex cell. To disable register packing, set syn_keep=1 on the net between the register and the complex cell. 
+@N: BN362 :"/home/tnj0921/Documents/LLMReaserch/DEQUANTIZE/DEQUANTIZE.sv":26:12:26:20|Removing sequential instance NoName_45 (in view: work.DEQUANTIZE(verilog)) of type view:PrimLib.dffr(prim) because it does not drive other instances.
+@A: BN291 :"/home/tnj0921/Documents/LLMReaserch/DEQUANTIZE/DEQUANTIZE.sv":26:12:26:20|Boundary register NoName_45 (in view: work.DEQUANTIZE(verilog)) is packed into a complex cell. To disable register packing, set syn_keep=1 on the net between the register and the complex cell. 
+@N: BN362 :"/home/tnj0921/Documents/LLMReaserch/DEQUANTIZE/DEQUANTIZE.sv":26:12:26:20|Removing sequential instance NoName_46 (in view: work.DEQUANTIZE(verilog)) of type view:PrimLib.dffr(prim) because it does not drive other instances.
+@A: BN291 :"/home/tnj0921/Documents/LLMReaserch/DEQUANTIZE/DEQUANTIZE.sv":26:12:26:20|Boundary register NoName_46 (in view: work.DEQUANTIZE(verilog)) is packed into a complex cell. To disable register packing, set syn_keep=1 on the net between the register and the complex cell. 
+@N: BN362 :"/home/tnj0921/Documents/LLMReaserch/DEQUANTIZE/DEQUANTIZE.sv":26:12:26:20|Removing sequential instance NoName_47 (in view: work.DEQUANTIZE(verilog)) of type view:PrimLib.dffr(prim) because it does not drive other instances.
+@A: BN291 :"/home/tnj0921/Documents/LLMReaserch/DEQUANTIZE/DEQUANTIZE.sv":26:12:26:20|Boundary register NoName_47 (in view: work.DEQUANTIZE(verilog)) is packed into a complex cell. To disable register packing, set syn_keep=1 on the net between the register and the complex cell. 
+@N: BN362 :"/home/tnj0921/Documents/LLMReaserch/DEQUANTIZE/DEQUANTIZE.sv":26:12:26:20|Removing sequential instance NoName_48 (in view: work.DEQUANTIZE(verilog)) of type view:PrimLib.dffr(prim) because it does not drive other instances.
+@A: BN291 :"/home/tnj0921/Documents/LLMReaserch/DEQUANTIZE/DEQUANTIZE.sv":26:12:26:20|Boundary register NoName_48 (in view: work.DEQUANTIZE(verilog)) is packed into a complex cell. To disable register packing, set syn_keep=1 on the net between the register and the complex cell. 
+@N: BN362 :"/home/tnj0921/Documents/LLMReaserch/DEQUANTIZE/DEQUANTIZE.sv":26:12:26:20|Removing sequential instance NoName_49 (in view: work.DEQUANTIZE(verilog)) of type view:PrimLib.dffr(prim) because it does not drive other instances.
+@A: BN291 :"/home/tnj0921/Documents/LLMReaserch/DEQUANTIZE/DEQUANTIZE.sv":26:12:26:20|Boundary register NoName_49 (in view: work.DEQUANTIZE(verilog)) is packed into a complex cell. To disable register packing, set syn_keep=1 on the net between the register and the complex cell. 
+@N: BN362 :"/home/tnj0921/Documents/LLMReaserch/DEQUANTIZE/DEQUANTIZE.sv":26:12:26:20|Removing sequential instance NoName_50 (in view: work.DEQUANTIZE(verilog)) of type view:PrimLib.dffr(prim) because it does not drive other instances.
+@A: BN291 :"/home/tnj0921/Documents/LLMReaserch/DEQUANTIZE/DEQUANTIZE.sv":26:12:26:20|Boundary register NoName_50 (in view: work.DEQUANTIZE(verilog)) is packed into a complex cell. To disable register packing, set syn_keep=1 on the net between the register and the complex cell. 
+@N: BN362 :"/home/tnj0921/Documents/LLMReaserch/DEQUANTIZE/DEQUANTIZE.sv":26:12:26:20|Removing sequential instance NoName_51 (in view: work.DEQUANTIZE(verilog)) of type view:PrimLib.dffr(prim) because it does not drive other instances.
+@A: BN291 :"/home/tnj0921/Documents/LLMReaserch/DEQUANTIZE/DEQUANTIZE.sv":26:12:26:20|Boundary register NoName_51 (in view: work.DEQUANTIZE(verilog)) is packed into a complex cell. To disable register packing, set syn_keep=1 on the net between the register and the complex cell. 
+@N: BN362 :"/home/tnj0921/Documents/LLMReaserch/DEQUANTIZE/DEQUANTIZE.sv":26:12:26:20|Removing sequential instance NoName_52 (in view: work.DEQUANTIZE(verilog)) of type view:PrimLib.dffr(prim) because it does not drive other instances.
+@A: BN291 :"/home/tnj0921/Documents/LLMReaserch/DEQUANTIZE/DEQUANTIZE.sv":26:12:26:20|Boundary register NoName_52 (in view: work.DEQUANTIZE(verilog)) is packed into a complex cell. To disable register packing, set syn_keep=1 on the net between the register and the complex cell. 
+@N: BN362 :"/home/tnj0921/Documents/LLMReaserch/DEQUANTIZE/DEQUANTIZE.sv":26:12:26:20|Removing sequential instance NoName_53 (in view: work.DEQUANTIZE(verilog)) of type view:PrimLib.dffr(prim) because it does not drive other instances.
+@A: BN291 :"/home/tnj0921/Documents/LLMReaserch/DEQUANTIZE/DEQUANTIZE.sv":26:12:26:20|Boundary register NoName_53 (in view: work.DEQUANTIZE(verilog)) is packed into a complex cell. To disable register packing, set syn_keep=1 on the net between the register and the complex cell. 
+@N: BN362 :"/home/tnj0921/Documents/LLMReaserch/DEQUANTIZE/DEQUANTIZE.sv":26:12:26:20|Removing sequential instance NoName_54 (in view: work.DEQUANTIZE(verilog)) of type view:PrimLib.dffr(prim) because it does not drive other instances.
+@A: BN291 :"/home/tnj0921/Documents/LLMReaserch/DEQUANTIZE/DEQUANTIZE.sv":26:12:26:20|Boundary register NoName_54 (in view: work.DEQUANTIZE(verilog)) is packed into a complex cell. To disable register packing, set syn_keep=1 on the net between the register and the complex cell. 
+@N: BN362 :"/home/tnj0921/Documents/LLMReaserch/DEQUANTIZE/DEQUANTIZE.sv":26:12:26:20|Removing sequential instance NoName_55 (in view: work.DEQUANTIZE(verilog)) of type view:PrimLib.dffr(prim) because it does not drive other instances.
+@A: BN291 :"/home/tnj0921/Documents/LLMReaserch/DEQUANTIZE/DEQUANTIZE.sv":26:12:26:20|Boundary register NoName_55 (in view: work.DEQUANTIZE(verilog)) is packed into a complex cell. To disable register packing, set syn_keep=1 on the net between the register and the complex cell. 
+@N: BN362 :"/home/tnj0921/Documents/LLMReaserch/DEQUANTIZE/DEQUANTIZE.sv":26:12:26:20|Removing sequential instance NoName_56 (in view: work.DEQUANTIZE(verilog)) of type view:PrimLib.dffr(prim) because it does not drive other instances.
+@A: BN291 :"/home/tnj0921/Documents/LLMReaserch/DEQUANTIZE/DEQUANTIZE.sv":26:12:26:20|Boundary register NoName_56 (in view: work.DEQUANTIZE(verilog)) is packed into a complex cell. To disable register packing, set syn_keep=1 on the net between the register and the complex cell. 
+@N: BN362 :"/home/tnj0921/Documents/LLMReaserch/DEQUANTIZE/DEQUANTIZE.sv":26:12:26:20|Removing sequential instance NoName_57 (in view: work.DEQUANTIZE(verilog)) of type view:PrimLib.dffr(prim) because it does not drive other instances.
+@A: BN291 :"/home/tnj0921/Documents/LLMReaserch/DEQUANTIZE/DEQUANTIZE.sv":26:12:26:20|Boundary register NoName_57 (in view: work.DEQUANTIZE(verilog)) is packed into a complex cell. To disable register packing, set syn_keep=1 on the net between the register and the complex cell. 
+@N: BN362 :"/home/tnj0921/Documents/LLMReaserch/DEQUANTIZE/DEQUANTIZE.sv":26:12:26:20|Removing sequential instance NoName_58 (in view: work.DEQUANTIZE(verilog)) of type view:PrimLib.dffr(prim) because it does not drive other instances.
+@A: BN291 :"/home/tnj0921/Documents/LLMReaserch/DEQUANTIZE/DEQUANTIZE.sv":26:12:26:20|Boundary register NoName_58 (in view: work.DEQUANTIZE(verilog)) is packed into a complex cell. To disable register packing, set syn_keep=1 on the net between the register and the complex cell. 
+@N: BN362 :"/home/tnj0921/Documents/LLMReaserch/DEQUANTIZE/DEQUANTIZE.sv":26:12:26:20|Removing sequential instance NoName_59 (in view: work.DEQUANTIZE(verilog)) of type view:PrimLib.dffr(prim) because it does not drive other instances.
+@A: BN291 :"/home/tnj0921/Documents/LLMReaserch/DEQUANTIZE/DEQUANTIZE.sv":26:12:26:20|Boundary register NoName_59 (in view: work.DEQUANTIZE(verilog)) is packed into a complex cell. To disable register packing, set syn_keep=1 on the net between the register and the complex cell. 
+@N: BN362 :"/home/tnj0921/Documents/LLMReaserch/DEQUANTIZE/DEQUANTIZE.sv":26:12:26:20|Removing sequential instance NoName_60 (in view: work.DEQUANTIZE(verilog)) of type view:PrimLib.dffr(prim) because it does not drive other instances.
+@A: BN291 :"/home/tnj0921/Documents/LLMReaserch/DEQUANTIZE/DEQUANTIZE.sv":26:12:26:20|Boundary register NoName_60 (in view: work.DEQUANTIZE(verilog)) is packed into a complex cell. To disable register packing, set syn_keep=1 on the net between the register and the complex cell. 
+@N: BN362 :"/home/tnj0921/Documents/LLMReaserch/DEQUANTIZE/DEQUANTIZE.sv":26:12:26:20|Removing sequential instance NoName_61 (in view: work.DEQUANTIZE(verilog)) of type view:PrimLib.dffr(prim) because it does not drive other instances.
+@A: BN291 :"/home/tnj0921/Documents/LLMReaserch/DEQUANTIZE/DEQUANTIZE.sv":26:12:26:20|Boundary register NoName_61 (in view: work.DEQUANTIZE(verilog)) is packed into a complex cell. To disable register packing, set syn_keep=1 on the net between the register and the complex cell. 
+@N: BN362 :"/home/tnj0921/Documents/LLMReaserch/DEQUANTIZE/DEQUANTIZE.sv":26:12:26:20|Removing sequential instance NoName_62 (in view: work.DEQUANTIZE(verilog)) of type view:PrimLib.dffr(prim) because it does not drive other instances.
+@A: BN291 :"/home/tnj0921/Documents/LLMReaserch/DEQUANTIZE/DEQUANTIZE.sv":26:12:26:20|Boundary register NoName_62 (in view: work.DEQUANTIZE(verilog)) is packed into a complex cell. To disable register packing, set syn_keep=1 on the net between the register and the complex cell. 
+@N: BN362 :"/home/tnj0921/Documents/LLMReaserch/DEQUANTIZE/DEQUANTIZE.sv":26:12:26:20|Removing sequential instance NoName_63 (in view: work.DEQUANTIZE(verilog)) of type view:PrimLib.dffr(prim) because it does not drive other instances.
+@A: BN291 :"/home/tnj0921/Documents/LLMReaserch/DEQUANTIZE/DEQUANTIZE.sv":26:12:26:20|Boundary register NoName_63 (in view: work.DEQUANTIZE(verilog)) is packed into a complex cell. To disable register packing, set syn_keep=1 on the net between the register and the complex cell. 
+@N: BN362 :"/home/tnj0921/Documents/LLMReaserch/DEQUANTIZE/DEQUANTIZE.sv":26:12:26:20|Removing sequential instance NoName_64 (in view: work.DEQUANTIZE(verilog)) of type view:PrimLib.dffr(prim) because it does not drive other instances.
+@A: BN291 :"/home/tnj0921/Documents/LLMReaserch/DEQUANTIZE/DEQUANTIZE.sv":26:12:26:20|Boundary register NoName_64 (in view: work.DEQUANTIZE(verilog)) is packed into a complex cell. To disable register packing, set syn_keep=1 on the net between the register and the complex cell. 
+@N: BN362 :"/home/tnj0921/Documents/LLMReaserch/DEQUANTIZE/DEQUANTIZE.sv":26:12:26:20|Removing sequential instance NoName_65 (in view: work.DEQUANTIZE(verilog)) of type view:PrimLib.dffr(prim) because it does not drive other instances.
+@A: BN291 :"/home/tnj0921/Documents/LLMReaserch/DEQUANTIZE/DEQUANTIZE.sv":26:12:26:20|Boundary register NoName_65 (in view: work.DEQUANTIZE(verilog)) is packed into a complex cell. To disable register packing, set syn_keep=1 on the net between the register and the complex cell. 
+@N: BN362 :"/home/tnj0921/Documents/LLMReaserch/DEQUANTIZE/DEQUANTIZE.sv":26:12:26:20|Removing sequential instance NoName_66 (in view: work.DEQUANTIZE(verilog)) of type view:PrimLib.dffr(prim) because it does not drive other instances.
+@A: BN291 :"/home/tnj0921/Documents/LLMReaserch/DEQUANTIZE/DEQUANTIZE.sv":26:12:26:20|Boundary register NoName_66 (in view: work.DEQUANTIZE(verilog)) is packed into a complex cell. To disable register packing, set syn_keep=1 on the net between the register and the complex cell. 
+@N: BN362 :"/home/tnj0921/Documents/LLMReaserch/DEQUANTIZE/DEQUANTIZE.sv":26:12:26:20|Removing sequential instance NoName_67 (in view: work.DEQUANTIZE(verilog)) of type view:PrimLib.dffr(prim) because it does not drive other instances.
+@A: BN291 :"/home/tnj0921/Documents/LLMReaserch/DEQUANTIZE/DEQUANTIZE.sv":26:12:26:20|Boundary register NoName_67 (in view: work.DEQUANTIZE(verilog)) is packed into a complex cell. To disable register packing, set syn_keep=1 on the net between the register and the complex cell. 
+@N: BN362 :"/home/tnj0921/Documents/LLMReaserch/DEQUANTIZE/DEQUANTIZE.sv":26:12:26:20|Removing sequential instance NoName_68 (in view: work.DEQUANTIZE(verilog)) of type view:PrimLib.dffr(prim) because it does not drive other instances.
+@A: BN291 :"/home/tnj0921/Documents/LLMReaserch/DEQUANTIZE/DEQUANTIZE.sv":26:12:26:20|Boundary register NoName_68 (in view: work.DEQUANTIZE(verilog)) is packed into a complex cell. To disable register packing, set syn_keep=1 on the net between the register and the complex cell. 
+@N: BN362 :"/home/tnj0921/Documents/LLMReaserch/DEQUANTIZE/DEQUANTIZE.sv":26:12:26:20|Removing sequential instance NoName_69 (in view: work.DEQUANTIZE(verilog)) of type view:PrimLib.dffr(prim) because it does not drive other instances.
+@A: BN291 :"/home/tnj0921/Documents/LLMReaserch/DEQUANTIZE/DEQUANTIZE.sv":26:12:26:20|Boundary register NoName_69 (in view: work.DEQUANTIZE(verilog)) is packed into a complex cell. To disable register packing, set syn_keep=1 on the net between the register and the complex cell. 
+@N: BN362 :"/home/tnj0921/Documents/LLMReaserch/DEQUANTIZE/DEQUANTIZE.sv":26:12:26:20|Removing sequential instance NoName_70 (in view: work.DEQUANTIZE(verilog)) of type view:PrimLib.dffr(prim) because it does not drive other instances.
+@A: BN291 :"/home/tnj0921/Documents/LLMReaserch/DEQUANTIZE/DEQUANTIZE.sv":26:12:26:20|Boundary register NoName_70 (in view: work.DEQUANTIZE(verilog)) is packed into a complex cell. To disable register packing, set syn_keep=1 on the net between the register and the complex cell. 
+@N: BN362 :"/home/tnj0921/Documents/LLMReaserch/DEQUANTIZE/DEQUANTIZE.sv":26:12:26:20|Removing sequential instance NoName_71 (in view: work.DEQUANTIZE(verilog)) of type view:PrimLib.dffr(prim) because it does not drive other instances.
+@A: BN291 :"/home/tnj0921/Documents/LLMReaserch/DEQUANTIZE/DEQUANTIZE.sv":26:12:26:20|Boundary register NoName_71 (in view: work.DEQUANTIZE(verilog)) is packed into a complex cell. To disable register packing, set syn_keep=1 on the net between the register and the complex cell. 
+@N: BN362 :"/home/tnj0921/Documents/LLMReaserch/DEQUANTIZE/DEQUANTIZE.sv":26:12:26:20|Removing sequential instance NoName_72 (in view: work.DEQUANTIZE(verilog)) of type view:PrimLib.dffr(prim) because it does not drive other instances.
+@A: BN291 :"/home/tnj0921/Documents/LLMReaserch/DEQUANTIZE/DEQUANTIZE.sv":26:12:26:20|Boundary register NoName_72 (in view: work.DEQUANTIZE(verilog)) is packed into a complex cell. To disable register packing, set syn_keep=1 on the net between the register and the complex cell. 
+@N: BN362 :"/home/tnj0921/Documents/LLMReaserch/DEQUANTIZE/DEQUANTIZE.sv":26:12:26:20|Removing sequential instance NoName_73 (in view: work.DEQUANTIZE(verilog)) of type view:PrimLib.dffr(prim) because it does not drive other instances.
+@A: BN291 :"/home/tnj0921/Documents/LLMReaserch/DEQUANTIZE/DEQUANTIZE.sv":26:12:26:20|Boundary register NoName_73 (in view: work.DEQUANTIZE(verilog)) is packed into a complex cell. To disable register packing, set syn_keep=1 on the net between the register and the complex cell. 
+@N: BN362 :"/home/tnj0921/Documents/LLMReaserch/DEQUANTIZE/DEQUANTIZE.sv":26:12:26:20|Removing sequential instance NoName_74 (in view: work.DEQUANTIZE(verilog)) of type view:PrimLib.dffr(prim) because it does not drive other instances.
+@A: BN291 :"/home/tnj0921/Documents/LLMReaserch/DEQUANTIZE/DEQUANTIZE.sv":26:12:26:20|Boundary register NoName_74 (in view: work.DEQUANTIZE(verilog)) is packed into a complex cell. To disable register packing, set syn_keep=1 on the net between the register and the complex cell. 
+@N: BN362 :"/home/tnj0921/Documents/LLMReaserch/DEQUANTIZE/DEQUANTIZE.sv":26:12:26:20|Removing sequential instance NoName_75 (in view: work.DEQUANTIZE(verilog)) of type view:PrimLib.dffr(prim) because it does not drive other instances.
+@A: BN291 :"/home/tnj0921/Documents/LLMReaserch/DEQUANTIZE/DEQUANTIZE.sv":26:12:26:20|Boundary register NoName_75 (in view: work.DEQUANTIZE(verilog)) is packed into a complex cell. To disable register packing, set syn_keep=1 on the net between the register and the complex cell. 
+@N: BN362 :"/home/tnj0921/Documents/LLMReaserch/DEQUANTIZE/DEQUANTIZE.sv":26:12:26:20|Removing sequential instance NoName_76 (in view: work.DEQUANTIZE(verilog)) of type view:PrimLib.dffr(prim) because it does not drive other instances.
+@A: BN291 :"/home/tnj0921/Documents/LLMReaserch/DEQUANTIZE/DEQUANTIZE.sv":26:12:26:20|Boundary register NoName_76 (in view: work.DEQUANTIZE(verilog)) is packed into a complex cell. To disable register packing, set syn_keep=1 on the net between the register and the complex cell. 
+@N: BN362 :"/home/tnj0921/Documents/LLMReaserch/DEQUANTIZE/DEQUANTIZE.sv":26:12:26:20|Removing sequential instance NoName_77 (in view: work.DEQUANTIZE(verilog)) of type view:PrimLib.dffr(prim) because it does not drive other instances.
+@A: BN291 :"/home/tnj0921/Documents/LLMReaserch/DEQUANTIZE/DEQUANTIZE.sv":26:12:26:20|Boundary register NoName_77 (in view: work.DEQUANTIZE(verilog)) is packed into a complex cell. To disable register packing, set syn_keep=1 on the net between the register and the complex cell. 
+@N: BN362 :"/home/tnj0921/Documents/LLMReaserch/DEQUANTIZE/DEQUANTIZE.sv":26:12:26:20|Removing sequential instance NoName_78 (in view: work.DEQUANTIZE(verilog)) of type view:PrimLib.dffr(prim) because it does not drive other instances.
+@A: BN291 :"/home/tnj0921/Documents/LLMReaserch/DEQUANTIZE/DEQUANTIZE.sv":26:12:26:20|Boundary register NoName_78 (in view: work.DEQUANTIZE(verilog)) is packed into a complex cell. To disable register packing, set syn_keep=1 on the net between the register and the complex cell. 
+@N: BN362 :"/home/tnj0921/Documents/LLMReaserch/DEQUANTIZE/DEQUANTIZE.sv":26:12:26:20|Removing sequential instance NoName_79 (in view: work.DEQUANTIZE(verilog)) of type view:PrimLib.dffr(prim) because it does not drive other instances.
+@A: BN291 :"/home/tnj0921/Documents/LLMReaserch/DEQUANTIZE/DEQUANTIZE.sv":26:12:26:20|Boundary register NoName_79 (in view: work.DEQUANTIZE(verilog)) is packed into a complex cell. To disable register packing, set syn_keep=1 on the net between the register and the complex cell. 
+@N: BN362 :"/home/tnj0921/Documents/LLMReaserch/DEQUANTIZE/DEQUANTIZE.sv":26:12:26:20|Removing sequential instance NoName_80 (in view: work.DEQUANTIZE(verilog)) of type view:PrimLib.dffr(prim) because it does not drive other instances.
+@A: BN291 :"/home/tnj0921/Documents/LLMReaserch/DEQUANTIZE/DEQUANTIZE.sv":26:12:26:20|Boundary register NoName_80 (in view: work.DEQUANTIZE(verilog)) is packed into a complex cell. To disable register packing, set syn_keep=1 on the net between the register and the complex cell. 
+@N: BN362 :"/home/tnj0921/Documents/LLMReaserch/DEQUANTIZE/DEQUANTIZE.sv":26:12:26:20|Removing sequential instance NoName_81 (in view: work.DEQUANTIZE(verilog)) of type view:PrimLib.dffr(prim) because it does not drive other instances.
+@A: BN291 :"/home/tnj0921/Documents/LLMReaserch/DEQUANTIZE/DEQUANTIZE.sv":26:12:26:20|Boundary register NoName_81 (in view: work.DEQUANTIZE(verilog)) is packed into a complex cell. To disable register packing, set syn_keep=1 on the net between the register and the complex cell. 
+@N: BN362 :"/home/tnj0921/Documents/LLMReaserch/DEQUANTIZE/DEQUANTIZE.sv":26:12:26:20|Removing sequential instance NoName_82 (in view: work.DEQUANTIZE(verilog)) of type view:PrimLib.dffr(prim) because it does not drive other instances.
+@A: BN291 :"/home/tnj0921/Documents/LLMReaserch/DEQUANTIZE/DEQUANTIZE.sv":26:12:26:20|Boundary register NoName_82 (in view: work.DEQUANTIZE(verilog)) is packed into a complex cell. To disable register packing, set syn_keep=1 on the net between the register and the complex cell. 
+@N: BN362 :"/home/tnj0921/Documents/LLMReaserch/DEQUANTIZE/DEQUANTIZE.sv":26:12:26:20|Removing sequential instance NoName_83 (in view: work.DEQUANTIZE(verilog)) of type view:PrimLib.dffr(prim) because it does not drive other instances.
+@A: BN291 :"/home/tnj0921/Documents/LLMReaserch/DEQUANTIZE/DEQUANTIZE.sv":26:12:26:20|Boundary register NoName_83 (in view: work.DEQUANTIZE(verilog)) is packed into a complex cell. To disable register packing, set syn_keep=1 on the net between the register and the complex cell. 
+@N: BN362 :"/home/tnj0921/Documents/LLMReaserch/DEQUANTIZE/DEQUANTIZE.sv":26:12:26:20|Removing sequential instance NoName_84 (in view: work.DEQUANTIZE(verilog)) of type view:PrimLib.dffr(prim) because it does not drive other instances.
+@A: BN291 :"/home/tnj0921/Documents/LLMReaserch/DEQUANTIZE/DEQUANTIZE.sv":26:12:26:20|Boundary register NoName_84 (in view: work.DEQUANTIZE(verilog)) is packed into a complex cell. To disable register packing, set syn_keep=1 on the net between the register and the complex cell. 
+@N: BN362 :"/home/tnj0921/Documents/LLMReaserch/DEQUANTIZE/DEQUANTIZE.sv":26:12:26:20|Removing sequential instance NoName_85 (in view: work.DEQUANTIZE(verilog)) of type view:PrimLib.dffr(prim) because it does not drive other instances.
+@A: BN291 :"/home/tnj0921/Documents/LLMReaserch/DEQUANTIZE/DEQUANTIZE.sv":26:12:26:20|Boundary register NoName_85 (in view: work.DEQUANTIZE(verilog)) is packed into a complex cell. To disable register packing, set syn_keep=1 on the net between the register and the complex cell. 
+@N: BN362 :"/home/tnj0921/Documents/LLMReaserch/DEQUANTIZE/DEQUANTIZE.sv":26:12:26:20|Removing sequential instance NoName_86 (in view: work.DEQUANTIZE(verilog)) of type view:PrimLib.dffr(prim) because it does not drive other instances.
+@A: BN291 :"/home/tnj0921/Documents/LLMReaserch/DEQUANTIZE/DEQUANTIZE.sv":26:12:26:20|Boundary register NoName_86 (in view: work.DEQUANTIZE(verilog)) is packed into a complex cell. To disable register packing, set syn_keep=1 on the net between the register and the complex cell. 
+@N: BN362 :"/home/tnj0921/Documents/LLMReaserch/DEQUANTIZE/DEQUANTIZE.sv":26:12:26:20|Removing sequential instance NoName_87 (in view: work.DEQUANTIZE(verilog)) of type view:PrimLib.dffr(prim) because it does not drive other instances.
+@A: BN291 :"/home/tnj0921/Documents/LLMReaserch/DEQUANTIZE/DEQUANTIZE.sv":26:12:26:20|Boundary register NoName_87 (in view: work.DEQUANTIZE(verilog)) is packed into a complex cell. To disable register packing, set syn_keep=1 on the net between the register and the complex cell. 
+@N: BN362 :"/home/tnj0921/Documents/LLMReaserch/DEQUANTIZE/DEQUANTIZE.sv":26:12:26:20|Removing sequential instance NoName_88 (in view: work.DEQUANTIZE(verilog)) of type view:PrimLib.dffr(prim) because it does not drive other instances.
+@A: BN291 :"/home/tnj0921/Documents/LLMReaserch/DEQUANTIZE/DEQUANTIZE.sv":26:12:26:20|Boundary register NoName_88 (in view: work.DEQUANTIZE(verilog)) is packed into a complex cell. To disable register packing, set syn_keep=1 on the net between the register and the complex cell. 
+@N: BN362 :"/home/tnj0921/Documents/LLMReaserch/DEQUANTIZE/DEQUANTIZE.sv":26:12:26:20|Removing sequential instance NoName_89 (in view: work.DEQUANTIZE(verilog)) of type view:PrimLib.dffr(prim) because it does not drive other instances.
+@A: BN291 :"/home/tnj0921/Documents/LLMReaserch/DEQUANTIZE/DEQUANTIZE.sv":26:12:26:20|Boundary register NoName_89 (in view: work.DEQUANTIZE(verilog)) is packed into a complex cell. To disable register packing, set syn_keep=1 on the net between the register and the complex cell. 
+@N: BN362 :"/home/tnj0921/Documents/LLMReaserch/DEQUANTIZE/DEQUANTIZE.sv":26:12:26:20|Removing sequential instance NoName_90 (in view: work.DEQUANTIZE(verilog)) of type view:PrimLib.dffr(prim) because it does not drive other instances.
+@A: BN291 :"/home/tnj0921/Documents/LLMReaserch/DEQUANTIZE/DEQUANTIZE.sv":26:12:26:20|Boundary register NoName_90 (in view: work.DEQUANTIZE(verilog)) is packed into a complex cell. To disable register packing, set syn_keep=1 on the net between the register and the complex cell. 
+@N: BN362 :"/home/tnj0921/Documents/LLMReaserch/DEQUANTIZE/DEQUANTIZE.sv":26:12:26:20|Removing sequential instance NoName_91 (in view: work.DEQUANTIZE(verilog)) of type view:PrimLib.dffr(prim) because it does not drive other instances.
+@A: BN291 :"/home/tnj0921/Documents/LLMReaserch/DEQUANTIZE/DEQUANTIZE.sv":26:12:26:20|Boundary register NoName_91 (in view: work.DEQUANTIZE(verilog)) is packed into a complex cell. To disable register packing, set syn_keep=1 on the net between the register and the complex cell. 
+@N: BN362 :"/home/tnj0921/Documents/LLMReaserch/DEQUANTIZE/DEQUANTIZE.sv":26:12:26:20|Removing sequential instance NoName_92 (in view: work.DEQUANTIZE(verilog)) of type view:PrimLib.dffr(prim) because it does not drive other instances.
+@A: BN291 :"/home/tnj0921/Documents/LLMReaserch/DEQUANTIZE/DEQUANTIZE.sv":26:12:26:20|Boundary register NoName_92 (in view: work.DEQUANTIZE(verilog)) is packed into a complex cell. To disable register packing, set syn_keep=1 on the net between the register and the complex cell. 
+@N: BN362 :"/home/tnj0921/Documents/LLMReaserch/DEQUANTIZE/DEQUANTIZE.sv":26:12:26:20|Removing sequential instance NoName_93 (in view: work.DEQUANTIZE(verilog)) of type view:PrimLib.dffr(prim) because it does not drive other instances.
+@A: BN291 :"/home/tnj0921/Documents/LLMReaserch/DEQUANTIZE/DEQUANTIZE.sv":26:12:26:20|Boundary register NoName_93 (in view: work.DEQUANTIZE(verilog)) is packed into a complex cell. To disable register packing, set syn_keep=1 on the net between the register and the complex cell. 
+@N: BN362 :"/home/tnj0921/Documents/LLMReaserch/DEQUANTIZE/DEQUANTIZE.sv":26:12:26:20|Removing sequential instance NoName_94 (in view: work.DEQUANTIZE(verilog)) of type view:PrimLib.dffr(prim) because it does not drive other instances.
+@A: BN291 :"/home/tnj0921/Documents/LLMReaserch/DEQUANTIZE/DEQUANTIZE.sv":26:12:26:20|Boundary register NoName_94 (in view: work.DEQUANTIZE(verilog)) is packed into a complex cell. To disable register packing, set syn_keep=1 on the net between the register and the complex cell. 
+
+Starting Early Timing Optimization (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 115MB peak: 116MB)
+
+
+Finished Early Timing Optimization (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 115MB peak: 116MB)
+
+
+Starting factoring (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 115MB peak: 116MB)
+
+
+Finished factoring (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 115MB peak: 116MB)
+
+@A: BN291 :|Boundary register gen_dequant\[3\]\.data_out[96] (in view: work.DEQUANTIZE(verilog)) is packed into a complex cell. To disable register packing, set syn_keep=1 on the net between the register and the complex cell. 
+@A: BN291 :|Boundary register gen_dequant\[3\]\.data_out[97] (in view: work.DEQUANTIZE(verilog)) is packed into a complex cell. To disable register packing, set syn_keep=1 on the net between the register and the complex cell. 
+@A: BN291 :|Boundary register gen_dequant\[3\]\.data_out[98] (in view: work.DEQUANTIZE(verilog)) is packed into a complex cell. To disable register packing, set syn_keep=1 on the net between the register and the complex cell. 
+@A: BN291 :|Boundary register gen_dequant\[3\]\.data_out[99] (in view: work.DEQUANTIZE(verilog)) is packed into a complex cell. To disable register packing, set syn_keep=1 on the net between the register and the complex cell. 
+
+Only the first 100 messages of id 'BN291' are reported. To see all messages use 'report_messages -log /home/tnj0921/Documents/LLMReaserch/DEQUANTIZE/synlog/DEQUANT_fpga_mapper.srr -id BN291' in the Tcl shell. To see all messages in future runs, use the command 'message_override -limit {BN291} -count unlimited' in the Tcl shell.
+@N: BN362 :|Removing sequential instance gen_dequant\[3\]\.data_out[96] (in view: work.DEQUANTIZE(verilog)) of type view:PrimLib.dffr(prim) because it does not drive other instances.
+@N: BN362 :|Removing sequential instance gen_dequant\[3\]\.data_out[97] (in view: work.DEQUANTIZE(verilog)) of type view:PrimLib.dffr(prim) because it does not drive other instances.
+@N: BN362 :|Removing sequential instance gen_dequant\[3\]\.data_out[98] (in view: work.DEQUANTIZE(verilog)) of type view:PrimLib.dffr(prim) because it does not drive other instances.
+@N: BN362 :|Removing sequential instance gen_dequant\[3\]\.data_out[99] (in view: work.DEQUANTIZE(verilog)) of type view:PrimLib.dffr(prim) because it does not drive other instances.
+
+Only the first 100 messages of id 'BN362' are reported. To see all messages use 'report_messages -log /home/tnj0921/Documents/LLMReaserch/DEQUANTIZE/synlog/DEQUANT_fpga_mapper.srr -id BN362' in the Tcl shell. To see all messages in future runs, use the command 'message_override -limit {BN362} -count unlimited' in the Tcl shell.
+
+Finished generic timing optimizations - Pass 1 (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 117MB peak: 119MB)
+
+
+Starting Early Timing Optimization (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 117MB peak: 119MB)
+
+
+Finished Early Timing Optimization (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 117MB peak: 119MB)
+
+
+Finished generic timing optimizations - Pass 2 (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 117MB peak: 119MB)
+
+
+Starting Early Timing Optimization (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 117MB peak: 119MB)
+
+
+Finished Early Timing Optimization (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 117MB peak: 119MB)
+
+
+Finished preparing to map (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 117MB peak: 119MB)
+
+
+Finished technology mapping (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 116MB peak: 119MB)
+
+
+Finished technology timing optimizations and critical path resynthesis (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 116MB peak: 119MB)
+
+
+Finished restoring hierarchy (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 116MB peak: 119MB)
+
+
+
+Start Writing Netlists (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 105MB peak: 119MB)
+
+Writing Analyst data base /home/tnj0921/Documents/LLMReaserch/DEQUANTIZE/DEQUANT.srm
+
+Finished Writing Netlist Databases (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 115MB peak: 119MB)
+
+Writing Verilog Netlist and constraint files
+Writing .vqm output for Quartus
+
+Writing scf file... (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 117MB peak: 119MB)
+
+@N: BW103 |The default time unit for the Synopsys Constraint File (SDC or FDC) is 1ns.
+@N: BW107 |Synopsys Constraint File capacitance units using default value of 1pF 
+Writing FDC file /home/tnj0921/Documents/LLMReaserch/DEQUANTIZE/DEQUANT_synplify.fdc
+
+Finished Writing Verilog Netlist and constraint files (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 115MB peak: 119MB)
+
+
+Start final timing analysis (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 116MB peak: 119MB)
+
+@W: MT420 |Found inferred clock DEQUANTIZE|clk with period 1000.00ns. Please declare a user-defined clock on port clk.
+
+
+##### START OF TIMING REPORT #####[
+# Timing Report written on Thu May  7 04:00:07 2026
+#
+
+
+Top view:               DEQUANTIZE
+Requested Frequency:    1.0 MHz
+Wire load mode:         top
+Paths requested:        5
+Constraint File(s):    
+@N: MT320 |This timing report is an estimate of place and route data. For final timing results, use the FPGA vendor place and route report.
+
+@N: MT322 |Clock constraints include only register-to-register paths associated with each individual clock.
+
+
+
+Performance Summary
+*******************
+
+
+Worst slack in design: NA
+
+                   Requested     Estimated     Requested     Estimated               Clock        Clock              
+Starting Clock     Frequency     Frequency     Period        Period        Slack     Type         Group              
+---------------------------------------------------------------------------------------------------------------------
+DEQUANTIZE|clk     1.0 MHz       NA            1000.000      NA            NA        inferred     Inferred_clkgroup_0
+=====================================================================================================================
+Estimated period and frequency reported as NA means no slack depends directly on the clock waveform
+
+
+
+
+
+Clock Relationships
+*******************
+
+Clocks            |    rise  to  rise   |    fall  to  fall   |    rise  to  fall   |    fall  to  rise 
+--------------------------------------------------------------------------------------------------------
+Starting  Ending  |  constraint  slack  |  constraint  slack  |  constraint  slack  |  constraint  slack
+--------------------------------------------------------------------------------------------------------
+========================================================================================================
+ Note: 'No paths' indicates there are no paths in the design for that pair of clock edges.
+       'Diff grp' indicates that paths exist but the starting clock and ending clock are in different clock groups.
+
+
+
+Interface Information 
+*********************
+
+No IO constraint found
+
+
+##### END OF TIMING REPORT #####]
+
+Timing exceptions that could not be applied
+None
+
+Finished final timing analysis (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 117MB peak: 119MB)
+
+
+Finished timing report (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 117MB peak: 119MB)
+
+##### START OF AREA REPORT #####[
+Design view:work.DEQUANTIZE(verilog)
+Selecting part 5CGXFC7C6F23C6
+@N: FA174 |The following device usage report estimates place and route data. Please look at the place and route report for final resource usage.
+
+Total combinational functions 52 of 112960 ( 0%)
+ALUT usage by number of inputs
+		  7 input functions 	 0
+		  6 input functions 	 0
+		  5 input functions 	 0
+		  4 input functions 	 0
+		  <=3 input functions 	 52
+ALUTs by mode
+		  normal mode            0
+		  extended LUT mode      0
+		  arithmetic mode        52
+		  shared arithmetic mode 0
+Total registers 65 of 225920 ( 0%)
+Total Estimated Packed ALMs 27 of 56480 ( 0%)
+I/O pins 196 of 522 (38%), total I/O based on largest package of this part.
+
+Number of I/O registers
+			Input DDRs    :0
+			Output DDRs   :0
+
+DSP.M9X9: 4
+DSP.M27X27: 4
+DSP Blocks:     8 
+ShiftTap:       0  (0 registers)
+Ena:             64
+Sload:           0
+Sclr:            0
+M10Ks:           0  (0% of 686)
+Memory ALUTs:   0  (0% of 28240)
+Total ESB:      0 bits 
+
+##### END OF AREA REPORT #####]
+
+Mapper successful!
+
+At Mapper Exit (Real Time elapsed 0h:00m:01s; CPU Time elapsed 0h:00m:00s; Memory used current: 24MB peak: 119MB)
+
+Process took 0h:00m:01s realtime, 0h:00m:01s cputime
+# Thu May  7 04:00:08 2026
+
+###########################################################]
